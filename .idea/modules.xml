@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/yaml-diff.iml" filepath="$PROJECT_DIR$/yaml-diff.iml" />
-      <module fileurl="file://$PROJECT_DIR$/yaml-sync.iml" filepath="$PROJECT_DIR$/yaml-sync.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/yaml-sync-tool.iml" filepath="$PROJECT_DIR$/.idea/yaml-sync-tool.iml" />
     </modules>
   </component>
 </project>
