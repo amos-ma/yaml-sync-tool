@@ -1,0 +1,225 @@
+HC2Configs:
+  gRPCHost: ${lookup(HC2_GRPC_HOST_URL)}
+  gRPCSecurityEnabled: false
+HTLAFF_NY_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_gnae1_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_gnae1_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL
+HTLAFF_QA_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL
+HTLAFF_VA_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_guse4_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_guse4_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL
+HttpClient_ACECONTENTSVCS_PCMSearchLike:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/acecontent-svcs/pcm/searchlike
+  useOverrideUrl: 'true'
+HttpClient_CUSTAPI_customer:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/custapi/customer
+  useOverrideUrl: 'true'
+HttpClient_Cache22_integratedListing:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/hotelrates/core/cache22svcs/v0/integratedrates/listing
+  useOverrideUrl: 'true'
+HttpClient_Cache22_retailrates:
+  bamLoggingEnabled: 'true'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/hotelrates/core/retailrates.do
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_bookedOffers:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/cug/internal/v1/bookedOffers
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_bookingPopularity:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/bookingpopularity
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_custpref:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/preference
+  connectTimeoutInMillis: '350'
+  readTimeoutInMillis: '1500'
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_favorite:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/favorite
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_hotelPopularity:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/hotelpopularity
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_hotelsearch:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/hotelsearch
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_signInData:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/signin/v1/data
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_viewedHotelItins:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/viewedHotelItins
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_bulkHotelContentV2:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v2/bulkhotelcontent
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_bulkHotelContentV3:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/content/v3/bulkhotelcontent
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_bulkHotelReview:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v1/bulkhotelreviews
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_hotelOverAllScoreV2:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v2/hoteloverallscore
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_hotelOverAllScoreV2-DefaultRequestHeaders:
+  accept: application/json
+HttpClient_ClairServices_hotelReview:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v1/hotelreviews
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_viewedHotelItins:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/clair/internal/v1/viewedHotelItins
+  useOverrideUrl: 'true'
+HttpClient_DealEngineAPI_getHotelSetiTags:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/dealengine/hotel/setiNames
+  useOverrideUrl: 'true'
+HttpClient_DealEngineAPI_getHotelsDealInfo:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/dealengine/getHotelsDealInfo
+  useOverrideUrl: 'true'
+HttpClient_EngServices_CustomerSignInStatus:
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/global2-svcs/gblsvcs/v1/customer/internal/signin/status
+  useOverrideUrl: 'true'
+HttpClient_EngServices_RecentHotelViews:
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/global2-svcs/gblsvcs/v1/clair/views
+  useOverrideUrl: 'true'
+HttpClient_EngServices_SaaS:
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/seti-svcs/seti
+  useOverrideUrl: 'true'
+HttpClient_EngServices_SaaS-DefaultRequestHeaders:
+  Accept: application/json
+  Content-Type: application/json
+HttpClient_HTLCONTSVCS_htlAmenities:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-content/content/hotel-amenities
+  useOverrideUrl: 'true'
+HttpClient_HTLCONTSVCS_htlContentWithDealids:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-content/content/with-deal-ids
+HttpClient_HTLRAPI_deal:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrapi/hotels/deal/listing
+  useOverrideUrl: 'true'
+HttpClient_HTLRCMS_roomInfoWithoutImagesProto:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrcms/get-roominfo-withoutimages-proto/
+  useOverrideUrl: 'true'
+HttpClient_HTLRCMS_roominfoLiteProto:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrcms/get-roominfo-lite-proto/
+  useOverrideUrl: 'true'
+HttpClient_HTLROOMMERGE_merge:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-room-merge/merge
+  useOverrideUrl: 'true'
+HttpClient_HTLROOMMERGE_nodaterooms:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-room-merge/nodaterooms
+  useOverrideUrl: 'true'
+HttpClient_HTLSORT_sortHotels:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/hsortapi/hotels/v0/sortHotels
+  useOverrideUrl: 'true'
+HttpClient_HtlSolrCloudServices_hotelSearch:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/
+  useOverrideUrl: 'true'
+HttpClient_HtlSolrCloudServices_metroRegionSearch:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/rtlsearch/
+  useOverrideUrl: 'true'
+HttpClient_MLAPI_prediction:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/ml-api/prediction
+  useOverrideUrl: 'true'
+HttpClient_SETISVCS_ACE:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/seti-svcs/ace
+  useOverrideUrl: 'true'
+HttpClient_SolrCloudServices_metroRegionSearch:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/rtlsearch/
+  useOverrideUrl: 'true'
+HttpClient_SolrServices_hotelSearch:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/hotels/
+  useOverrideUrl: 'true'
+AffiliateWhiteLabelExclusionDAO:
+  DBName: ${lookup(HTLAFF_RO_SECTION_NAME)}
+AppRedisConfiguration:
+  ClusterNames: ${lookup(REDIS_SECTION_NAME)}
+AstraDbCluster:
+  Region: ${lookup(ASTRA_DB_CLUSTER_REGION)}
+BookingHistoryCluster:
+  RedisCluster: ${lookup(REDIS_SECTION_NAME)}
+DCS:
+  AgentType: AMD
+  BamQMGRGroup: BAM_QMGRP
+  BaseDir: /tmp
+HollowConsumerConfig:
+  blobNamespace: ${lookup(GCS_BLOB_NAMESPACE)}
+HrapiSchemaRegistry:
+  schema.registry.url: ${lookup(AIVEN_BOOTSTRAP_SCHEMA_SERVER)}
+KafkaDefaultAMD_HV:
+  DataDumpDirectory: /tmp
+KafkaDefaultAMD_NV:
+  DataDumpDirectory: /tmp
+LdapRedisConfiguration:
+  ClusterNames: ${lookup(REDIS_SECTION_NAME)}
+PclnSchemaRegistry:
+  DefaultURL: ${lookup(AIVEN_BOOTSTRAP_SERVER)}
+  HVURL: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+SchemaRegistry:
+  schema.registry.url: ${lookup(AIVEN_BOOTSTRAP_SCHEMA_SERVER)}
+SessionService:
+  BaseUrl: ${lookup(HTL_SERVICE_KEY)}/cas-session-war/cassdb/datastash
+TomcatJMXStats:
+  ThreadPoolNames: name="http-nio-8443"
+KafkaAsyncClientHighVolume:
+  metadata.broker.list: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+PricingEngineClientConfigs:
+  gRPCHost: ${lookup(GRPC_HOST_URL)}
+EmailHash:
+  BCRYPTSALT: '!PCLN$HA@SAL%'
+

@@ -1,0 +1,2393 @@
+AGODA_VIP:
+  countryCodes: US,CA,MX
+  enabled: 'false'
+  ownerId: 402,19,38,50,17,137,16,8,14
+APIDefaults:
+  SuccessResultCode: '0'
+APIInterceptor:
+  DefaultAppCode: DESKTOP
+  POSSIBLE_CLIENT_IP_HEADERS: x-pcln-client-ip
+  PropagateAllHeaders: 'false'
+  RguidAppendAppId: 'false'
+  RguidReplaceSpecialChars: 'true'
+  determineApplicationTypeAndDeviceType: 'false'
+  determinePLFandPartnerCodes: 'false'
+APISpringInitBean:
+  AppStatusAdminInit: 'true'
+  TomcatJMXStatsEnabled: 'true'
+APIStats:
+  EnableAPIStats: 'true'
+  EnableContentStats: 'true'
+  KafkaTopic: hotel_api_data
+  hotelApiDataEnabled: 'false'
+  logRequestParamAsJson: 'true'
+  logSortDurationString: 'false'
+API_CONSTANTS:
+  ADJ_MARKUP_SETI: IGNORE_ADJUSTED_MARKUP_1
+  Cache22Expirements: IGNORE_ADJUSTED_MARKUP_1,DEFAULT_VS_VARIANT_MARGIN_OFF_AMOUNT_1,HTL_DISABLE_RBC_LOOKUP_FOR_LISTING,HTL_LISTING_USE_HC2,HTL_HC2_AGODA_DETAIL_RTL,HTL_HC2_AGODA_DETAIL_SOPQ,HTL_HC2_BCOM_DETAILS,HTL_BCOM_OCC_FILTER,HTL_HC2_USE_HASHED_KEY_TABLE
+  DisneyHotelIds: 39079,10972503,39078,39071,10972803,39081,10973103,39077,39070,39075,39069,39074,21059704,39076,39068,39066,39072,39083,5731905,39084,5731805,39073,39080
+  IntegratedGISSetiTag: INTEGRATED_GIS
+  NativeAppCodes: AMAZONNEG,ANDROIDNEG,ANDROIDTABLET,IPADNEG,IPHONENEG,NEGOTIATOR,WINPHONE
+  SortSetiExperiments: DATA_SORT_SPONSORED_LISTINGS_METASEM_DESKTOP,DATA_SORT_SPONSORED_LISTINGS_METASEM_MOBILEWEB,DATA_SORT_SPONSORED_LISTINGS_METASEM_IOS,DATA_SORT_SPONSORED_LISTINGS_METASEM_ANDROID,DATA_SORT_SPONSORED_LISTINGS_PROXIMITY_METASEM_DESKTOP,DATA_SORT_SPONSORED_LISTINGS_PROXIMITY_METASEM_MWEB,DATA_SORT_SPONSORED_LISTINGS_PROXIMITY_METASEM_IOS,DATA_SORT_SPONSORED_LISTINGS_PROXIMITY_METASEM_ANDROID,DATA_SORT_CPM_PPS_DESKTOP,DATA_SORT_CPM_PPS_MWEB,DATA_SORT_CPM_PPS_IOS,DATA_SORT_CPM_PPS_ANDROID,DATA_SORT_SOPQ_ALLOC_NO_CUG_ALIKE_SOPQ,DATA_SORT_KODDI_PLACEMENT_DESKTOP,DATA_SORT_KODDI_PLACEMENT_PX_DESKTOP,DATA_SORT_CPM_DOD_DESKTOP,DATA_SORT_CPM_DOD_MWEB,DATA_SORT_CPM_DOD_IOS,DATA_SORT_CPM_DOD_ANDROID,DATA_SORT_KODDI_NORMALIZATION_DYNAMIC_MEAN
+AffiliateExclusionEnableFlag:
+  enabledGlobalPartners: HBC
+AffiliateWhiteLabelExclusionDAO:
+  DBName: ${lookup(HTLAFF_RO_SECTION_NAME)}
+  PartialRefreshSupported: 'false'
+  RefreshDataSeconds: '3600'
+AgodaApsOnMobile:
+  includedAppCodes: IPHONENEG,ANDROIDNEG,MOBILEWEB
+AgodaFreebiePromo:
+  codesToSkip: 1,26,78,20,89,6,77,95
+AgodaIntegration:
+  UseTableDrivenLogic: 'true'
+AgodaMerchantRateControl:
+  enabled: 'true'
+AgodaRSupplierDrivenCug:
+  enabled: 'true'
+AgodaStreamInaccurateRateEventPublisher:
+  publishMessageEnabled: 'true'
+AllInclusiveRatesSummaryIncludingMandatoryFee:
+  enabled: 'true'
+ApiStatsAMD:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '250'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '5'
+  QueueName: hotel_api_stats_hrapi
+  TriggerQueueSize: '1'
+AppRedisConfiguration:
+  ClusterNames: ${lookup(REDIS_SECTION_NAME)}
+AstraDbCluster:
+  Region: ${lookup(ASTRA_DB_CLUSTER_REGION)}
+  maxSecureBundleDownloadRetries: '5'
+BAM_ASH1_401:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.DEF.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: DEADQ
+  HostName: ash1-bam-401
+  InitialCapacity: '1'
+  MaxCapacity: '2'
+  MaxConnectionAttempts: '3'
+  MinCapacity: '1'
+  Port: '1414'
+  QueueManager: BAM_ASH1_401
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+BAM_ASH1_402:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.DEF.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: DEADQ
+  HostName: ash1-bam-402
+  InitialCapacity: '1'
+  MaxCapacity: '2'
+  MaxConnectionAttempts: '3'
+  MinCapacity: '1'
+  Port: '1414'
+  QueueManager: BAM_ASH1_402
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+BAM_ASH1_403:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.DEF.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: DEADQ
+  HostName: ash1-bam-403
+  InitialCapacity: '1'
+  MaxCapacity: '2'
+  MaxConnectionAttempts: '3'
+  MinCapacity: '1'
+  Port: '1414'
+  QueueManager: BAM_ASH1_403
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+BAM_ASH1_404:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.DEF.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: DEADQ
+  HostName: ash1-bam-404
+  InitialCapacity: '1'
+  MaxCapacity: '2'
+  MaxConnectionAttempts: '3'
+  MinCapacity: '1'
+  Port: '1414'
+  QueueManager: BAM_ASH1_404
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+BAM_NY_001:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.DEF.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: DEADQ
+  HostName: NY-BAM-001.prod.pcln.com
+  InitialCapacity: '1'
+  MaxCapacity: '2'
+  MaxConnectionAttempts: '3'
+  MinCapacity: '1'
+  Port: '1414'
+  QueueManager: NY_BAM_001
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+BAM_NY_002:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.DEF.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: DEADQ
+  HostName: NY-BAM-002.prod.pcln.com
+  InitialCapacity: '1'
+  MaxCapacity: '2'
+  MaxConnectionAttempts: '3'
+  MinCapacity: '1'
+  Port: '1414'
+  QueueManager: NY_BAM_002
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+BAM_NY_003:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.DEF.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: DEADQ
+  HostName: NY-BAM-003.prod.pcln.com
+  InitialCapacity: '1'
+  MaxCapacity: '1'
+  MaxConnectionAttempts: '3'
+  MinCapacity: '1'
+  Port: '1414'
+  QueueManager: NY_BAM_003
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+BAM_NY_004:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.DEF.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: DEADQ
+  HostName: NY-BAM-004.prod.pcln.com
+  InitialCapacity: '1'
+  MaxCapacity: '2'
+  MaxConnectionAttempts: '3'
+  MinCapacity: '1'
+  Port: '1414'
+  QueueManager: NY_BAM_004
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+BAM_QMGRP:
+  Algorithm: RRPP
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  Mode: DISPATCH_MODE_JMS
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '3000'
+  QueueName: LOG_EVENT
+  RefreshTimeInSecs: '180'
+  RefreshType: EVENT_TIMER_REFRESH
+  ShouldCancelFuture: 'true'
+  TriggerQueueSize: '2'
+  persistMessages: 'false'
+BAM_QMGRP_KAFKA:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  ForceDefaultQueue: 'true'
+  ForceDefaultQueueExceptions: aim_remote_event
+  MQTimeoutMillis: '10000'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '3000'
+  QueueName: bam_hrapi
+  SessionPoolName: KafkaAsyncClient
+  TriggerQueueSize: '2'
+  persistAMDData: 'false'
+BAM_QMGRP_ROUTER:
+  DEFAULT_DISPATCHERS: BAM_QMGRP_KAFKA
+  DISPATCHERS_HOTEL_PRICE_DIFF_LIST_DTL: BAM_QMGRP_KAFKA,KafkaDefaultAMD.hrapi_data
+BE_HTL_MULTICUG_TEST:
+  META_RID_PATTERN: .+
+  META_VARIANT: VARIANT
+BKGRateBlock:
+  SetiTagName: HTL_BE_BKG_RATE_BLOCK_II
+  countryCodes: US,CA,MX
+  enableForAllHotels: 'true'
+  ownerId: 402,19,38,50,17,137,16,8,14
+BannerAdExpressDealsController:
+  Enabled_For_Banner_Ad_Express_Deals: PLKAYAK
+  Enabled_For_Search_Express_Deals: CO1492259,PLTRIPADVISORDISP
+BannerAdsService:
+  UseSlingShotDeepLinkUrl: 'true'
+BaseMetricsConfiguration:
+  UnifiedReportingEnabled: 'true'
+  jvmPerfReportingEnabled: 'true'
+  perfReportingEnabled: 'true'
+BaseRequestLevelHotelSegmentValidator:
+  useCustomizedExpression: 'true'
+BeddingCountsFilter:
+  enabled: 'true'
+BookingGenericPromoDeals:
+  dealsOfDayId: '11'
+  enabled: 'true'
+  salesCampaignId: '12'
+BookingGeniusRates:
+  enabled: 'true'
+  includeAllAppc: 'true'
+BookingHistoryCluster:
+  RedisCluster: ${lookup(REDIS_SECTION_NAME)}
+BookingHistoryUtil:
+  BookingHistorySleepTime: '50'
+  BookingHistoryWaitTimeOut: '2000'
+BookingPopularity:
+  BookingPopularityFutureTimeoutInMs: '100'
+  BookingPopularityLastBookingSinceHours: '24'
+  EnableBookingPopularityForce: 'true'
+BookingSecretDeals:
+  enabled: 'true'
+BotDetectionInterceptor:
+  Enabled: 'false'
+  HardStopBotRequests: 'false'
+COMMON_ROOM_AMENITIES:
+  NHA_Type_List: 201,229,208,216,221,220,213
+  enabled: 'true'
+CUGDealComparator:
+  honorRateIdentifier: 'true'
+  rateIdCacheEnabled: 'true'
+CUGMarkupCalculator:
+  TempDisableLocalCurrecncyForMobileApp: 'false'
+Cache22Client:
+  Cache22FetchServerGroup: Cache22FetchServerGrpVA
+  Cache22MrrQMGrpName: Cache22MrrQMGroupVA
+  Cache22QManagerName: Cache22ServerQMGroupVA
+  Cache22UpdateServerGroup: Cache22UpdateServerGrpVA
+  EnableAccuracyStats: 'true'
+  EnableRateDesc: 'false'
+  InfrappAsynMsgGroup: InfrappAsynMsgGroupVA
+  MaxQueriesPerRequest: '200'
+  PrintDetailedRequestResponse: 'false'
+  RequestResponseLog: 'true'
+  SendClientStats: 'false'
+  TestTimeOutInMillis: '1000'
+  UpdateRateQueue: HOTEL_ASYNC_UPDATE
+Cache22ListingRateRequestBuilder:
+  HC2AppCodes: DESKTOP,MOBILEWEB
+Cache22RateFilter:
+  allInclusiveRateBenefitsCode: 5004B,5004B-1
+Cache22RateRequestBuilder:
+  isBotCheck: 'false'
+  superAggPrecheckSeti: HTL_BE_SUPERAGG_PRECHECK_CHECKOUT
+Cache22RateRequestBuilderCacheGDS:
+  Cache22MetaClickLoggingEnabled: 'false'
+  ReadTimeoutMillis: '18000'
+Cache22RateRequestBuilderGDSOnly:
+  ReadTimeoutMillis: '16900'
+Cache22RateResponseConverter:
+  EnableNearbyAttractionsAndRestaurants: 'false'
+  UseCancellationCodeForCancellationText: 'true'
+  enableTaxIdPrepending: 'true'
+  enableTaxIdPrependingToGdsDescription: 'true'
+  ignoreRequestedCurrencyFields: 'true'
+Cache22RoomrateConverter:
+  UseAGACancelPolicyV2DAO: 'true'
+  UseAgodaRoomTypeV2DAO: 'false'
+Cache22ServerQMGroupVA:
+  ConcurrentSendDataThreadNum: '10'
+CacheRequestBlacklistHandler:
+  handler: SESSION
+CacheStats:
+  MetricsEnabled: 'true'
+  StatsFreq: '120'
+  StreamName: EHCACHE_STATS_HRAPI
+CancelPolicyConfig:
+  HonorBookingCancellationText: 'true'
+  problematicAgodaCancelCodes: 0D0P_100P,0D0P_50P,0D10P_100P,0D10P_10P,0D10P_50P,0D1N_100P,0D1N_1N,0D1P_100P,0D1P_1P,0D1P_5P,0D20P_100P,0D20P_20P,0D20P_30P,0D20P_50P,0D2160P_100P,0D25P_100P,0D30P_100P,0D30P_30P,0D40P_100P,0D40P_40P,0D44P_44P,0D50P_100P,0D50P_50P,0D50P_70P,0D50P_80P,0D55P_100P,0D5P_5P,0D60P_100P,0D70P_100P,0D70P_70P,0D80P_100P,0D80P_80P,0D90P_100P,0D90P_90P,1D0P_0D0P_0P,1D0P_0D0P_100P,1D0P_0D40P_40P,1D0P_0D50P_50P,1D0P_0P,1D0P_100P,1D10P_100P,1D10P_50P,1D1P_100P,1D1P_1P,1D33P_100P,2D1800P_1800P,3D0P_100P,3D1P_100P,3D90P_100P,4D0P_0D0P_0P,4D90P_100P,5D0P_0D0P_0P,5D0P_0P,5D0P_100P,7D0P_0P,7D0P_100P,7D100P_,6D30P_2D100P_100P
+CancelPolicyMigration:
+  completedGdsRateType: AGODA_U,ENET_U,HOTELBEDS_P,BOOKING_R,AGODA_R
+  setiTagName: HTL_BE_BKG_CANCELLATION_MIGRATION
+  testGdsRateType: ''
+CassandraMonitor:
+  InitialDelaySeconds: '5'
+  TimerIntervalSeconds: '600'
+CassandraSessionFactory:
+  WriteOnlyClusterName: SessionCluster
+  WriteOnlySecondaryClusterEnabled: 'false'
+CdnImageUrl:
+  BookingCdnHost: s-ec.bstatic.com
+  BookingTargetHost: aff.bstatic.com
+  EnabledAppCodes: DESKTOP,DESKTOP_NEWSTACK,ANDROIDNEG,MOBILEWEB,IPADNEG,IPHONENEG
+CitySearchHelper:
+  BoundingBoxBaselineSetiName: HTL_BE_BBOX_BASELINE_SETI
+  HIGHLIMIT_maxHotels: '10000'
+  MAXLIMIT_maxHotels: '30000'
+  MIDLIMIT_maxHotels: '5000'
+  SOLRCLOUDV2_queryParams: bbSortByDistance=true&maxHotels=10000
+  maxHotelsSetiTagName: BE_HTL_BB_MAX_HOTELS_SETI
+  serviceGroupSetiTag_BOUNDING_BOX: BE_HRAPI_HTL_INDEX_MIGRATION_BOUNDINGBOX_SETI
+  serviceGroupSetiTag_GEO: BE_HRAPI_HTL_INDEX_MIGRATION_GEO_SETI
+  serviceGroup_BOUNDING_BOX: HtlSolrCloudServices
+  serviceGroup_GEO: HtlSolrCloudServices
+ConsolidateLogSessionManager:
+  CheckExpireInGet: 'false'
+  LogInfoDuringExpire: 'false'
+  LogWarning: 'false'
+  OverrideWithSameKey: 'false'
+  SessionCleanupTimeMillis: '10'
+CouponApplicableValidator:
+  blackListedBrandOwnerIDsForCoupons: 402,17,50,19,14,38,8,105
+CugBenchmarkRateGenerator:
+  benchmarkOpqToRtlPct: '0.75'
+  defaultFeePct: '0.017'
+CugConfiguration:
+  Enhanced_Processing_Fee_Programs: Tonight_Only_Deals,Mobile_Exclusive,Desktop_Deals,Value_Deal,Value_Deal_Desktop,Member_Deals,Book_Alike,Air_Xsell
+  MEMBER_DEALS_IPADNEG_PRG_SETI_NAME: CUG_MEMBER_DEALS_IPADNEG
+  MEMBER_DEALS_SETI_PRG_APPC_TEST: 'true'
+  MulticugBuildAllPossibleCugs: 'true'
+  NaturalOrderTopDeals: '2'
+  RoundUpPrice_Express_Deal: 'true'
+  RoundUpPrice_Pricebreaker: 'true'
+  SuppressHotelBeds: 'true'
+  TopCliffordDeals: '2'
+  TopMobileDeals: '6'
+  TotalCugDeals: '6'
+  UseUnadjAvgNightlyRateAsMinRetailRate: 'false'
+  maxNegativeMarginDollarAmountPRPN: '-0.01'
+  maxNegativeMarginDollarAmountPerStay: '-0.01'
+CugDealsRankScore:
+  AGODA: '5'
+  ENET: '4'
+  HOTELBEDS: '2'
+  MEMBER_DEALS: '1'
+  MOBILE_EXCLUSIVE: '2'
+  TONIGHT_ONLY_DEALS: '3'
+  TOURICO: '1'
+  WORLDSPAN: '3'
+CugHonorRateHelper:
+  tolerancePctForHtr1: '0'
+  tolerancePctForHtr2: '0'
+CugIpWhiteListSegment:
+  IpWhiteList: 216.152.208.0/24,208.85.138.0/24,208.85.139.0/24,64.5.93.0/24,172.21.220.0/24,172.21.74.0/24,172.21.74.0/24,65.115.220.193/27,216.50.137.146/29,189.201.177.0/24,202.124.135.130/24,186.119.120.168/29,200.93.168.152/29,64.6.22.251/24,64.6.29.251/24,64.6.23.1/24,64.6.30.50/24,64.6.20.50/24
+CugLatLongPreProcessor:
+  Enabled: 'true'
+  ExclusionPercentage: '1.0'
+  InclusionCapAmount: '20'
+  InclusionPercentage: '100.0'
+  ValidCustomerProximityMiles: '30'
+  compareLocationValidityMethods: 'false'
+  useHotelGeoInfo: 'true'
+CugPclnTaxFeeAdjustment:
+  enabled: 'true'
+CugPostProcessor:
+  Check_Potential_Member_Deals_enabled: 'false'
+  EnableCancelPolicyForAllAgodaUniversal: 'true'
+  HonorMetaClickedCugProgramRoom_PLGOOGLEMSS: 'true'
+  HonorMetaClickedCugProgramRoom_PLKAYAK: 'true'
+  SkipMemberDealCalculationForNonSignInCustomer: 'false'
+  enableBuildingMultiTableCugs: 'true'
+  enableHonorTheRate: 'false'
+  skipSignInRequiredCugForNonSignInUser: 'true'
+CugProcessingFeeCalculation:
+  unadjustmentMarkupFactor: '0.014'
+CugQueryBuildingStrategyV2:
+  EnableGetSimilarHotelBrandSet: 'true'
+  enableCUGPropertyFlag: 'true'
+  setBookedBeforeForPartialUnlockViaDE: 'true'
+CugRateFilteringService:
+  AllowedRateDrivenProgramsForPackage: Package_Deals,Mobile_Deals,Member_Deals,GoLocal,Agoda_VIP,Genius,Partner_Deal
+  IgnoredTargetProgramCodes: PACKAGE
+CugSegmentationPreProcessor:
+  DetailsEnabled: 'true'
+  Enabled: 'true'
+  enableCugdorParamForExpFullyUnlock: 'true'
+  useEmailBlacklistCache: 'true'
+  validateNativeAppUserAgent: 'false'
+CustHotelMatrixDataPreProcessor:
+  Enabled: 'false'
+CustSaveSearchHelper:
+  CustSaveSearchEnabledForce: 'true'
+CustomerHotelMatrixHelper:
+  MatrixTimeOut: '50'
+CustomerPreference:
+  Enabled: 'true'
+DCS:
+  AgentType: AMD
+  BamQMGRGroup: BAM_QMGRP
+  BaseDir: /tmp
+  ErrorThreshold: '2'
+  ProcessStatusUpdateFreqMillis: '20000'
+  SleepTimeOnError: '30000'
+  StatsEnabled: 'true'
+DISNEY_API_CONSTANTS:
+  DisneyHotelIds: 39079,10972503,39078,39071,10972803,39081,10973103,39077,39070,39075,39069,39074,21059704,39076,39068,39066,39072,39083,5731905,39084,5731805,39073,39080,47771506
+DPMWLImplV2:
+  DPMPolicyNames: ''
+DSJSBCCassandraSession:
+  QueryLoggerEnabled: 'true'
+DataCollectionRate:
+  HotelRetailListingService: '1.0'
+  ListingServiceDecorator: '1.0'
+  RetailRateDetailService: '1.0'
+DealCandidatedPerHotel:
+  SetSavingsClaimON: 'true'
+DealEnhancedRoomRate:
+  UseMapStructForMapping: 'true'
+DealTypeFilter:
+  enabledDealTypesForFiltering: Air_Xsell,AIR_XSELL,LATE_NIGHT_DEALS,RC_XSELL,RC_xSell,New_Customer_Deal
+DealsService:
+  MaxCugHotelAllowed: '500'
+  forceSignInToDeprecateDealsService: 'true'
+DefaultSessionPool:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.ADMIN.SVRCONN
+  CheckConnectionInterval: '600000'
+  MaxConnectionAttempts: '3'
+  SessionRefreshInterval: '420000'
+  SessionTimeout: '-1'
+  StatsInterval: '30000'
+DincClient:
+  HttpConnectionFactoryTimeoutMs: '499'
+  HttpConnectionTimeoutMs: '499'
+  HttpSocketTimeoutMs: '499'
+DisplayRateProcessor:
+  accessLevel: '2'
+  bufferSizeAsPowerOfTwo: '16384'
+  numberOfEventHandlers: '14'
+  writeEnabled: 'true'
+DynamicMarkup:
+  Air_Xsell_CustmMinSavingsAllowed: '0.05'
+  Air_Xsell_Deals_MinSavingsAllowed: '0.05'
+  Air_Xsell_DisableMerchandisingFlag: 'false'
+  App_Only_UseMerchantMarkupFromCRX: 'true'
+  BrandId_127304_DisableMerchandisingFlag: 'true'
+  BrandId_158305_DisableMerchandisingFlag: 'true'
+  BrandId_183305_DisableMerchandisingFlag: 'true'
+  BrandId_214405_DisableMerchandisingFlag: 'true'
+  BrandId_214505_DisableMerchandisingFlag: 'true'
+  BrandId_214605_DisableMerchandisingFlag: 'true'
+  BrandId_214705_DisableMerchandisingFlag: 'true'
+  BrandId_214805_DisableMerchandisingFlag: 'true'
+  BrandId_218305_DisableMerchandisingFlag: 'true'
+  BrandId_41_DisableMerchandisingFlag: 'true'
+  BrandId_76_DisableMerchandisingFlag: 'true'
+  Clifford_CustmMinSavingsAllowed: '0.0'
+  Desktop_Deals_CustmMinSavingsAllowed: '0.05'
+  Desktop_Deals_DisableMerchandisingFlag: 'false'
+  Desktop_Deals_MinSavingsAllowed: '0.05'
+  Desktop_Deals_UseMerchantMarkupFromCRX: 'false'
+  ENET_CUGEnabled: 'true'
+  EnableHLSorting: 'false'
+  Express_Deal_DisableMerchandisingFlag: 'true'
+  Express_Unlock_Deal_CustmMinSavingsAllowed: '0.05'
+  Express_Unlock_Deal_MerchandisingText: PREVBOOKFULL
+  GoLocal_CustmMinSavingsAllowed: '0.05'
+  HOTELBEDS_CUGEnabled: 'true'
+  Late_Night_Deals_CustmMinSavingsAllowed: '0.05'
+  Late_Night_Deals_DisableMerchandisingFlag: 'false'
+  Member_Deals_CustmMinSavingsAllowed: '0.05'
+  Member_Deals_UseMerchantMarkupFromCRX: 'true'
+  Mobile_Exclusive_CustmMinSavingsAllowed: '0.05'
+  Mobile_Exclusive_UseMerchantMarkupFromCRX: 'false'
+  NetValue: '8.00'
+  RC_Xsell_CustmMinSavingsAllowed: '0.05'
+  RC_Xsell_Deals_MinSavingsAllowed: '0.05'
+  RC_Xsell_DisableMerchandisingFlag: 'false'
+  Rate_Driven_CUG_DisableMerchandisingFlag: 'false'
+  RtlSavingValue: '7.00'
+  TOURICO_CUGEnabled: 'true'
+  TestMarkup: 'false'
+  TonightOnlyDealsEndHour: '23'
+  TonightOnlyDealsStartHour: '0'
+  Tonight_Only_Deals_CustmMinSavingsAllowed: '0.05'
+  Tonight_Only_Deals_UseMerchantMarkupFromCRX: 'true'
+  UserBookingCountFutureTimeoutMilliSeconds: '600'
+  ValidGdsList: WORLDSPAN,TOURICO,ENET,PEGASUS,HOTELBEDS,AGODA,BOOKING
+  Value_Deal_CustmMinSavingsAllowed: '0'
+  Value_Deal_Desktop_CustmMinSavingsAllowed: '0'
+  Value_Deal_Desktop_DisableMerchandisingFlag: 'false'
+  Value_Deal_Desktop_MarkupToCustMinSavingPct: 'false'
+  Value_Deal_DisableMerchandisingFlag: 'false'
+  Value_Deal_MarkupToCustMinSavingPct: 'false'
+  WORLDSPAN_CUGEnabled: 'true'
+DynamicMarkup_Savings:
+  ANDROIDNEG: 'true'
+  ANDROIDTABLET: 'true'
+  DESKTOP: 'true'
+  IPADNEG: 'true'
+  IPHONENEG: 'true'
+  IgnoreSavingsPercentage: 'true'
+  MOBILEWEB: 'true'
+  Mobile_Exclusive_IgnoreSavingsPct: 'false'
+  RetailRateInResponse: 'true'
+  Tonight_Only_Deals_IgnoreSavingsPct: 'false'
+DynamicPricingConfig:
+  enabled: 'false'
+  excludedAppCodes: IPHONENEG,IPADNEG,ANDROIDNEG,ANDROIDTABLET
+  executorThreadCount: '2'
+  gRPCHost: ${lookup(DYNAMIC_PRICING_GRPC_HOST_URL)}
+  gRPCPort: ${lookup(DYNAMIC_PRICING_GRPC_HOST_PORT)}
+ENET_U_MIGRATION:
+  EnableEnetUForPkg: 'true'
+  GdsName_MinRetail_MarkupCalculation_Enabled: 'true'
+  HBS_MER_Margin_Benchmark: '0.25'
+  HBS_MER_Margin_Discount: '0'
+  NO_MARKUP_MER_SupplierId: 1001,2001
+  SetiTagNamePkg: HTL_BE_GEN_PLATFORM_SUPERAGG
+  SetiTagname: HTL_BE_GEN_PLATFORM_SUPERAGG
+  SupplierActivationCheckPostponed: 'true'
+  SupplierIds: '3001'
+  enable_additional_queries: 'true'
+  enabled: 'true'
+  legacy_enabled: 'false'
+EXTEND_STAY:
+  AP_EXPANSION_ENABLED: 'true'
+EhcacheSplunkReporter:
+  MetricsEnabled: 'true'
+  StatsFreq: '120'
+  StreamName: EHCACHE_STATS_HRAPI
+EmailHash:
+  BCRYPTSALT: ${secret(gsm://${lookup(pcln.environ)}_hotel_be_email_hash_bcrypt_salt)}
+  ITERATIONS: '8'
+EnableAgodaPForCUG:
+  enabled: 'false'
+EnabledGdsControl:
+  EnablePastMidnightForAgoda: 'true'
+  PreviousDayCheckInUntilHourForBooking: '2'
+  ShowPastMidnightEnabledRefIds: RTCUSTOMERCARE
+Encryption:
+  EnableAESEncryption: 'false'
+EngServices:
+  HttpToHttps: CustomerService,OfferDetails
+EnhancedFeeCalculation:
+  NativeAppsPercentageOverrideSetiName: HTL_LD_RETAIL_MARKUP_NATIVE_APPS_PERCENTAGE_OVERRIDE
+  NativeAppsPercentageOverrideValue: '0.178'
+  NonNativeAppsPercentageOverrideSetiName: HTL_BE_RETAIL_MARKUP_NON_NATIVE_APPS_PERCENTAGE_OVERRIDE
+  NonNativeAppsPercentageOverrideValue: '0.178'
+  RetailMarkupOverridePercentage_NativeApps: '0.163'
+  RetailMarkupOverridePercentage_NonNativeApps: '0.178'
+  RetailMarkupOverride_NativeAppList: IPHONENEG,ANDROIDNEG,IPADNEG,ANDROIDTABLET
+EntityDialDecorator:
+  RegionalSetiEnabled: 'true'
+ExecutionTimeTracker:
+  AvgInsertResponseTimeThresholdMillis: '50000'
+  AvgSelectResponseTimeThresholdMillis: '50000'
+FREE_REFUNDABLE_CANCELLATION_FLAG_CATEGORY:
+  enabled: 'true'
+FasterxmlObjectMapper:
+  enableAfterburnerModule: 'false'
+FinalDealsConsolidator:
+  appcDisabledForDealType: IPHONENEG,ANDROIDNEG,IPADNEG,ANDROIDTABLET
+  enableDisablingAppsForDealTypes: 'false'
+FreebiesHelper:
+  createValueAddPromo: 'true'
+  overrideSeti: 'true'
+FutureMonitor:
+  detailStatsEnabled: 'true'
+GISManager:
+  isGetNeighborhoodImageListEnabled: 'false'
+GRAPHITE_METRICS:
+  PollingPeriodinSeconds: '120'
+GenericPromoControl:
+  ignoreGenericPromoSavingCheck: 'true'
+Global:
+  AppId: HRAPI
+  ApplyNewTrafficTier: 'true'
+  BamErrorLoggingEnabled: 'true'
+  IDatabaseSource: com.priceline.data.OracleDataBaseSourceImpl
+  InfraStatsEnable: 'true'
+  PartnerConxStatsEnabled: 'true'
+  ProductId: '16'
+  StaticDataConfig: OU=staticdataconfig
+GlobalRemoteInvoker:
+  CustomerManager: 'false'
+  P2Enabled: 'true'
+  PromoStaticData: 'false'
+HC2Configs:
+  Hc2CallingTestEnabledGPCD: PCLN,HBC,PKWL,FLWL,XMLH
+  gRPCEnabledProtocols: TLSv1.2
+  gRPCHost: ${lookup(HC2_GRPC_HOST_URL)}
+  gRPCKeyStore: /apps/home/eng/ssl/pcln_cacerts
+  gRPCPort: '443'
+  gRPCSecurityEnabled: false
+  grpcExecutorThreads: N
+  grpcExecutorThreadsCpuMultiplier: 1.0
+  grpcExecutorType: none
+  optimizedDecompressionEnabled: true
+HLRS-LocalThreadSession:
+  LogWarning: 'false'
+HOLLOW_AGODA_CANCEL_POLICY_V2:
+  enabled: 'true'
+HOLLOW_AGODA_ROOM_TYPE_V2:
+  enabled: 'true'
+HOLLOW_CURRENCY_DETAILS:
+  enabled: 'true'
+HOLLOW_HOTEL_INTEGRATED_CONTENT:
+  enabled: 'true'
+HOLLOW_HOTEL_SUPER_CLUSTER:
+  enabled: 'true'
+HOTEL_FEED_INFRAPP:
+  CISSQLQueueName: P_TRIP_HOTEL_LIMBO
+  InfraDispatcherGroupName: InfrappAsynMsgGroupVA
+  InfrappAsynMsgGroup: InfrappAsynMsgGroupVA
+HOTEL_NO_DATE_HOLLOW:
+  enabled: 'true'
+HTLAFF_NY_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_gnae1_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_gnae1_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL
+HTLAFF_QA_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL
+HTLAFF_VA_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_guse4_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_guse4_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL
+HTLCONTSVCS:
+  responseOptions: HOTEL_IMAGES,UHD_IMAGES
+HTL_BE_BCOM_MERCHANT_RATES:
+  META_RID_PATTERN: PL.+|XMHBC.+
+  META_VARIANT: DEFAULT
+HTL_BE_HC2_FILTER_EXPIRED_RATES:
+  META_RID_PATTERN: PL.+
+  META_VARIANT: DEFAULT
+HTL_BE_PRICING_ENGINE:
+  META_RID_PATTERN: XMHBC.+
+  META_VARIANT: DEFAULT
+HTL_HC2_AGODA_DETAIL_RTL:
+  productTypeWhitelist: RTL
+  recordStats: 'true'
+  xappCodeWhitelist: DESKTOP,MOBILEWEB
+HTL_HC2_AGODA_DETAIL_SOPQ:
+  productTypeWhitelist: SOPQ
+  recordStats: 'true'
+  xappCodeWhitelist: DESKTOP,MOBILEWEB
+HTL_HC2_BCOM_DETAILS:
+  recordStats: 'true'
+HTL_LISTING_USE_HC2:
+  recordStats: 'true'
+HTL_MERCHANT_FEE_1:
+  META_RID_PATTERN: .+
+  META_VARIANT: VARIANT
+HTL_META_TRAFFIC_CONTROLLER:
+  META_RID_PATTERN: PL.+
+  META_VARIANT: VARIANT
+HollowConsumerConfig:
+  announceObjectName: announced.version
+  blobNamespace: ${lookup(GCS_BLOB_NAMESPACE)}
+  keyLocation: file:///apps/home/eng/config/credentials.json
+  productBucketName: hollow-hotelproperty
+  productDataBucketName: hollow-hotelproperty
+HotelAPICommonUtil:
+  removeNonEnglishCharacter: 'true'
+HotelAPIHelperUtil:
+  IgnoreSupplierIdForAgodaU: 'true'
+HotelApiDurationAttribute:
+  enabledNewRelic: 'true'
+HotelApiRateQueryStatsHelper:
+  EnableNewColumns: 'true'
+HotelBedTypePriority:
+  DOUBLE: '3'
+  KING: '5'
+  QUEEN: '4'
+  SINGLE: '2'
+  SOFABED: '1'
+HotelBedsForRetail:
+  cancellable_display_enabled: 'true'
+  showCancelPolicyForHBS: 'false'
+HotelBedsTouricoTest:
+  enabled: 'true'
+HotelCmdRequestExecutor_Cache22ListingRateRequest:
+  async: 'false'
+  commandClassName: com.priceline.htlrapi.integrated.rate.Cache22ListingRateCommand
+HotelCmdRequestExecutor_Cache22RetailRateReqContent:
+  async: 'false'
+  commandClassName: com.priceline.htlrapi.rate.Cache22RetailRateCommand
+HotelCmdRequestExecutor_CitySearchRequestContent:
+  async: 'true'
+  commandClassName: com.priceline.htlrapi.command.citysearch.CitySearchCommand
+HotelCmdRequestExecutor_CustomerHotelMatrixRequest:
+  async: 'true'
+  commandClassName: com.priceline.htlrapi.command.custmatrix.CustomerHotelMatixCommand
+HotelCmdRequestExecutor_HtlPropertyRequestContent:
+  async: 'false'
+  commandClassName: com.priceline.htlrapi.command.htlproperty.HotelRetailPropertyLocalCommand
+HotelCmdRequestExecutor_HtlPropertyRequestContent2:
+  async: 'false'
+  commandClassName: com.priceline.htlrapi.command.htlproperty.HotelRetailPropertyLocalCommand2
+HotelCmdRequestExecutor_SetiACEImpressionRequestContent:
+  async: 'true'
+  commandClassName: com.priceline.hotelapi.common.seti.SetiACEImpressionCommand
+HotelCmdRequestExecutor_SetiACERollRequestContent:
+  async: 'true'
+  commandClassName: com.priceline.hotelapi.common.seti.SetiACERollCommand
+HotelCmdRequestExecutor_SetiRequestContent:
+  async: 'true'
+  commandClassName: com.priceline.hotelapi.common.seti.SetiCommand
+HotelContentAndAmenityInfoUtil:
+  UseTaxIdFromHotelContent: 'true'
+HotelContentHelper:
+  EnableContentService: 'true'
+  IsGetImagesEnabled: 'true'
+HotelCoreApiUtil:
+  PerformAgodaRDownlift: 'true'
+  useAgodaUTaxRate: 'false'
+  useApiCalculatedTaxRate: 'false'
+HotelCugFeeAndPclnTaxCalculator:
+  EndingCentsEnabled: 'true'
+HotelCustomerActivityAMD:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '250'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '2000'
+  QueueName: hotel_cust_activity
+  TriggerQueueSize: '5'
+HotelDealCommand:
+  ServiceGroupName: HOTELDEAL
+  ServiceName: deal
+HotelDealService:
+  setHotelDealVariants: 'true'
+HotelDisplayRankControler:
+  EnableHDRImproved: 'true'
+HotelEmbargoHelper:
+  disabled: 'true'
+  statsOnly: 'true'
+HotelEmbargoRollingRepository:
+  partitions: '5'
+  ttlSeconds: '300'
+HotelExpressDealsControllerHelper:
+  EnableSOPQPinningToTopFieldsForBannerAds: 'true'
+HotelFavorites:
+  ReadTimeoutInMillis: '50'
+HotelGeoHelper:
+  SubClusterBooster0: '2.0'
+HotelIdUtils:
+  EnableEntityCheckInCheckOut: 'true'
+  EnableRateIdInPclnId: 'true'
+HotelIntegratedAmenitiesCache:
+  enableStats: 'false'
+HotelMemberDealMinRate:
+  enabled: 'true'
+HotelPOSFilter:
+  CA: 41985,44734205,52837005,18487103,18788003,44880005,15987803,44885605,2852305,6498605,1015703,8146705,8144505,8146605,8144605,8144705,10565105,4864205,12660104,12660204,5571303,5571403,5571203,17891904,17912504,19515205,1324905,1322405,8146505,1322605,10050104,9244505,4863405,11640203,42619,25809604,25809504,57534805,660602,1333305,1324105,1324405,1337905,1324605,1346205,1346105,1346305,8066605,8066705,8066505,33783804,38328506,1342105,1343205,9514505,14529504,8794603,17309505,18345505,18339505,12091005,5306603,31649605,45648005,3092105,1477205,1477105,1339805,1336805,8867705,1675503,12126403,3771205,68303104,4863505,19361504,4863205,4864105,1325105,4864005,4864305,125075204,125075104,4863605,4863805,42620,4864505,31177403,19810504,47333506,46052804,5571303,4864405,4863905,10740804,4863305,4863705
+  DE: 44734205,52837005,18487103,18788003,44880005,15987803,44885605,2852305,6498605
+  DK: 44734205,18487103,18788003
+  FI: 44734205,18487103,18788003
+  GB: 44734205,52837005,18487103,18788003,44880005,15987803,44885605,2852305,6498605
+  IE: 44734205,52837005,18487103,18788003,44880005,15987803,44885605,2852305,6498605
+  NL: 44734205,52837005,18487103,18788003,44880005,15987803,44885605,2852305,6498605
+  'NO': 44734205,18487103,18788003
+  SE: 44734205,18487103,18788003
+HotelPaymentOptions:
+  BkgPaymentOptionDAOV2: 'true'
+HotelPopularityHelper:
+  UseV1: 'false'
+HotelPopularityPreProcessor:
+  Enabled: 'false'
+HotelPropertyCache:
+  cacheName: hotelPropertyCache
+HotelPropertyDAOFactory:
+  RemoteHotelPropertyServiceForce: 'true'
+HotelPropertyDAOFactoryHelper:
+  delegateFactoryClass: hotelPropertyDaoMigrationFactory
+  delegateFactoryEnabled: 'true'
+HotelPropertyDaoMigrationFactory:
+  UseHollowDao: 'true'
+HotelPropertyHelper:
+  CacheEnabled: 'false'
+HotelPropertyHollowDAO:
+  IndexKeys: CITY_ID,PROVINCE_CODE,PEGS_ODD_CHAIN_CODE,CLUSTER_ID_V2,BRAND_ID,OWNER_ID,AGD_HOTEL_ID,BKG_HOTEL_ID,AREA_ID
+HotelPropertyMappingCache:
+  cacheName: hotelPropertyMappingCache
+HotelPropertyMappingRepository:
+  MaxClientThreads: '20'
+  RemoteServiceBatchSize: '200'
+HotelPropertyRepository:
+  MaxClientThreads: '20'
+  RemoteServiceBatchSize: '200'
+HotelRateFilter:
+  honorEntityRuleId: 'true'
+HotelRateHolder:
+  EnableRoomGDSCompare: 'false'
+HotelRatesSummary:
+  updateMinRatePromoEquivalentAvailablePromotion: 'true'
+HotelRatesSummaryPostProcessor:
+  MetaMessagesForListingsEnabled: 'true'
+  useNewStrikeThru: 'true'
+HotelRetailAPIUtil:
+  EnableHttpToHttpsImgUrlConversion: 'true'
+  HttpUrlPrefixRegex: ^(http)?://
+  HttpsUrlPrefix: https://
+  SavingsClaimON: 'true'
+  longDescRohOrStandardRoomRegex: ((?i)^((?=.*\BED TYPE ASSIGNED AT CHECK-IN\b)|(?=.*\bBED
+    TYPE ASSIGNED AT CHECK IN\b)|(?=.*\bROH\b)|(?=.*\bRUN OF HOUSE\b)|(?=.*\bROOM
+    SELECTED AT CHECK-IN\b)|(?=.*\bBED SELECTED AT CHECK-IN\b)|^STANDARD$|^STANDARD
+    ROOM$|^SINGLE BED - STANDARD ROOM|^STANDARD VIEW|^STANDARD HALF BOARD|^STANDARD
+    ROOM - STANDARD ROOM|^STANDARD ROOM ONLY|^STANDARD LAND VIEW|^ROOM STANDARD FULL
+    BOARD|^ROOM STANDARD HALF BOARD|^STANDARD 1 BED|^NULL$).*$)
+  rohOrStandardRoomDescPattern: ^((?=.*\bROH\b)|(?=.*\bRUN OF HOUSE\b)|^STANDARD$|^STANDARD
+    ROOM$|^SINGLE BED - STANDARD ROOM|^STANDARD VIEW|^STANDARD HALF BOARD|^STANDARD
+    ROOM - STANDARD ROOM|^STANDARD ROOM ONLY|^STANDARD LAND VIEW|^ROOM STANDARD FULL
+    BOARD|^ROOM STANDARD HALF BOARD|^STANDARD 1 BED|^NULL$).*$
+  rohOrStandardRoomDescPattern_BACKUP_TWO: ^((?=.*\bROH\b)|(?=.*\bRUN OF HOUSE\b)|^STANDARD|^STANDARD
+    ROOM|^SINGLE BED - STANDARD ROOM$|^STANDARD VIEW|^STANDARD HALF BOARD|^STANDARD
+    ROOM - STANDARD ROOM|^STANDARD ROOM ONLY|^STANDARD LAND VIEW|^ROOM STANDARD FULL
+    BOARD|^ROOM STANDARD HALF BOARD|^STANDARD 1 BED|^NULL$).*$
+  rohOrStandardRoomDescPattern_backup: (^(?=.*\bROH\b)|(?=.*\bRUN OF HOUSE\b).*$)
+  shortDescStandardRoomRegex: ((?i)^((?=.*\bBed Type Assigned At Check In\b)|(?=.*\bBed
+    Type Assigned At Check-In\b)|(?=.*\bRoom Assigned At Check-In\b)).*$|^((?=.*\bROH\b)|(?=.*\bRUN
+    OF HOUSE\b)).*$|(?=.*\bROOM SELECTED AT CHECK-IN\b)|(?=.*\bBED SELECTED AT CHECK-IN\b)^(?=.*\bSTANDARD
+    ROOM\b).*^(?!.*BED).*$|^(?=.*\bSTANDARD  ROOM\b).*^(?!.*BED).*$|(^STANDARD ROOM$)|^^$)
+HotelRetailListing:
+  AdditionalPaddingForCacheMinRateCall: '15'
+  CallDealsAPIForGatedUser: 'true'
+  CheckSignInDeals: 'true'
+  CityIDThatNeedHotelsOutsideOfThemTreatedSameAsHotelsInsideThem: 3000001349:264702,3000001372:264702,3000015300:2510005
+  CugApplicableForRetail: 'true'
+  ENHANCED_CUG_SORT_AND_DEDUPING: ENHANCED_CUG_SORT_AND_DEDUP
+  EnableStrictTimeCheck: 'false'
+  MinPercentUnknownRatesForPriceSort: '25'
+  NewRateBuilders: 'false'
+  SOPQCallEnabled: 'true'
+  SetiTagNames: BE_HRAPI_HTL_INDEX_MIGRATION_GEO_SETI,BE_HTL_PARALLEL_LISTING_TIMEOUTS_MV_SETI,HTL_BE_HRAPI_METRO_REGION_CACHE_SETI,HTL_BE_PRICING_ML_MKUP_FEE,HTL_LISTING_USE_HC2,HTL_BE_BBOX_MIGRATION_MV_SETI,HTL_BE_PRICING_ML_MKUP_NOISE,BE_HTL_HRAPI_PARALLEL_LISTING_ANDROIDNEG_SETI,BE_HTL_HRAPI_PARALLEL_LISTING_IPHONENEG_SETI,HTL_HC2_BCOM_LISTINGS,HTL_BE_REMOVE_DUPLICATE_SPONSORED_LISTINGS,HTL_BE_GEN_PLATFORM_SUPERAGG,HTL_METRO_REGION_USE_HOLLOW,HTL_BE_BED_CHOICE_FLAG,HTL_BE_TRIPFILTER_PRICE_RANGE,HTL_BE_SKIP_PCLNTAX_SUBTRACTION,DATA_SORT_SPONSORED_LISTINGS_METASEM_DESKTOP,DATA_SORT_SPONSORED_LISTINGS_METASEM_MOBILEWEB,DATA_SORT_SPONSORED_LISTINGS_METASEM_IOS,DATA_SORT_SPONSORED_LISTINGS_METASEM_ANDROID,DATA_SORT_SPONSORED_LISTINGS_PROXIMITY_METASEM_DESKTOP,DATA_SORT_SPONSORED_LISTINGS_PROXIMITY_METASEM_MWEB,DATA_SORT_SPONSORED_LISTINGS_PROXIMITY_METASEM_IOS,DATA_SORT_SPONSORED_LISTINGS_PROXIMITY_METASEM_ANDROID,HTL_BE_USE_DEFAULT_TAX_RATE_FOR_FEE,HTL_BE_SKIP_MER_RULE_RATE_DRIVEN,HTL_RETAIL_MARKUP_OVERRIDE,HTL_BE_HC2_CORE_LIST,HTL_BE_SPIDER_FACADE_V2_TEST,HTL_FILTER_OUT_AGODA_REUTILIZED_RATES,DATA_SORT_CPM_PPS_DESKTOP,DATA_SORT_CPM_PPS_MWEB,DATA_SORT_CPM_PPS_IOS,DATA_SORT_CPM_PPS_ANDROID,HTL_BE_FILTER_OUT_AGODA_REUTILIZED_RATES,HTL_BE_HC2_FILTER_EXPIRED_RATES,HTL_AGODA_U_STACK_RATES,HTL_BE_AGD_REQUEST_PATH_GATED_RATES,HTL_BE_SUPPLIER_DRIVEN_GEO_RATES,HTL_BE_CANCEL_TEXT_GENERATION,HTL_BE_APS_ON_MOBILE_RETEST,HTL_BE_RETAIL_MARKUP_NATIVE_APPS_PERCENTAGE_OVERRIDE,HTL_BE_HONOR_SELL_CRITERIA_PREBOOK,HTL_BE_BYPASS_SAVINGS_CRITERIA_PREBOOK,HTL_BE_AGD_GEO_RATES,HTL_BE_BCOM_GEO_RATES,DATA_SORT_SOPQ_ALLOC_NO_CUG_ALIKE_SOPQ,HTL_BE_REMOVE_SOPQ_NET_SAVING_REQ,HTL_BE_RETEST_MANDATORY_FEE_COMPARISON,HTL_BE_SKIP_FIRST_HOTEL_SORT,HTL_BE_CANCEL_POLICY_CATEGORY_TOLERANCE,HTL_HONORING_CHECKOUT_RATE_WITH_ADJUSTMENT,HTL_BE_RETAIL_MARKUP_NON_NATIVE_APPS_PERCENTAGE_OVERRIDE,HTL_BE_AGD_R_SUPPLIER_DRIVEN_CUG,HTL_BE_CORRECT_MIN_RTL_RATE,DATA_SORT_KODDI_PLACEMENT_DESKTOP,DATA_SORT_KODDI_PLACEMENT_PX_DESKTOP,HTL_BE_PRICING_ENGINE,HTL_BE_CANCEL_TEXT_GENERATION_FOR_BCOM,HTL_BE_STANDARD_RATE_BENEFITS,HTL_DISABLE_OLD_HONORING_LOGIC,HTL_BE_ALL_INCLUSIVE_FILTER,HTL_BE_GDS_PROMO_MIN_SAVINGS_REQ,HTL_BE_BCOM_CHILD_RATES,HTL_BE_ENET_MERCHANT_MIN_MARKUP_REQ,HTL_BE_BCOM_MERCHANT_RATES,DATA_SORT_CPM_DOD_DESKTOP,DATA_SORT_CPM_DOD_MWEB,DATA_SORT_CPM_DOD_IOS,DATA_SORT_CPM_DOD_ANDROID,DATA_SORT_KODDI_NORMALIZATION_DYNAMIC_MEAN,HTL_BE_BCOM_MERCHANT_RATES,HTL_BE_DEFAULT_TAX_RATE_FOR_FEE_MARKDOWN_RULE,HTL_BE_AGD_CHILD_RATES,HTL_LD_RETAIL_MARKUP_NATIVE_APPS_PERCENTAGE_OVERRIDE
+  ShopAllCugSetiTimeOutInMillis: '100'
+  SignInDealsEnabledAppCodes: DESKTOP,DESKTOP_NEWSTACK,ANDROIDNEG,ANDROIDTABLET,MOBILEWEB,IPHONENEG
+  SignInDealsEnabledDevices: DESKTOP,MOBILE
+  UseUnadjustedRetailRateForSopq: 'true'
+  isUseHookLogic: 'false'
+  sopqAdjProcFeeCents: SOPQ_ADJUST_PROC_FEE_CENTS_ROUND_OFF
+HotelRetailListing-Cache:
+  CacheMinRateHelperMaxExpirationHours: '8'
+  CacheMinRateHelperMinExpirationHours: '1'
+  CacheMinRateHelperNegativeExpirationHours: '2'
+  MinNumHotelsForConcurrentHotelCommandProcessing: '4000'
+HotelRetailListing-HTL-29249:
+  FindDealsStatisticsEnabled: 'true'
+  FindDealsSubrequestStatisticsEnabled: 'false'
+HotelReviewOverallScore:
+  EnableOnDemandRemoteCall: 'true'
+HotelReviewOverallScoreRepository:
+  FutureTimeout: '15'
+HotelRoomContent:
+  AvailSoldOutRoomsEnabledAppCode_DESKTOP: 'true'
+  AvailSoldOutRoomsEnabledAppCode_MOBILEWEB: 'true'
+  NoAvailSoldOutRoomsEnabledAppCode_DESKTOP: 'true'
+  NoAvailSoldOutRoomsEnabledAppCode_MOBILEWEB: 'true'
+  NoDateRoomEnabledAppCode_DESKTOP: 'true'
+  NoDateRoomEnabledAppCode_MOBILEWEB: 'true'
+HotelRoomDealTypeFilter:
+  DetailsDealTypeFilteringPrograms: New_Customer_Deal,Express_Deal
+HotelRoomGroupingPostProcessor:
+  SetiName: ROOM_GROUPING_PHASE_II
+  UseRateCommbinator3: 'true'
+HotelRoomImagesPostProcessor:
+  expressDealsImageUrl: https://www.priceline.com/stay/checkout/public/assets/images/sopq_hotel_imgs/3_star_expd_838x480_2.jpg
+  expressDealsImageUrlNew: https://www.priceline.com/relax/public/assets/images/img-sopq-room-3-2.jpg
+  expressDealsThumbnailUrl: https://www.priceline.com/stay/checkout/public/assets/images/sopq_hotel_imgs/3_star_expd_838x480_2.jpg
+  expressDealsThumbnailUrlNew: https://www.priceline.com/relax/public/assets/images/img-sopq-room-3-2.jpg
+  imageMergingEnabled: 'true'
+  isNewFallBackRmImgEnabForAppCodes: 'true'
+HotelRoomRateCombinatorV3:
+  DedupeLessAttractiveRateMasterFlag: 'true'
+  EnableCopyImagesFromMergedRatesBugfix: 'false'
+  GroupPegasusByRoomCodeEnabled: 'true'
+  OverrideWithAgodaParentRoomId: 'false'
+HotelSOPQCustomerActivityAMD:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '250'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '2000'
+  QueueName: sopq_cust_activity
+  SessionPoolName: KafkaAsyncClient
+  TriggerQueueSize: '0'
+HotelSemiOpqConfigReader:
+  DisclosedRateExcludedChainCodes: AL,EL,GX,MD,LC,SI,XR,WH,WI,MV,HL,DT,ES,GI,HX,HH,HG,CN,HT,WA
+  SopqZoneScoreSortON: 'false'
+  rateAccessCodeExclusionList: HY|P04
+HotelSmartRateSourceManager:
+  EnableCacheOnlyForSopqBlended: 'false'
+  ForceCacheGDSAsnyc: 'true'
+  ForceCacheOnlyGDAsyncSeti: HTL_LISTINGS_GDSASYNC
+  GDSShoppingPaddedPageSize: '30'
+  cacheGdsLimitForCUGPerRequest: '0'
+  logFilterCountEnabled: 'true'
+HotelSopqRank:
+  CompareSOPQRankAndScore: 'true'
+HotelSuperClusterDAOV2:
+  RefreshDataSeconds: '10800'
+HotelSupplyControl:
+  NonMerchantCheckEnabled: 'false'
+  enabled: 'true'
+HotelSupplyFilterUtil:
+  disableBookingMerchantRates: 'false'
+  disableEnetForHigherThanDoubleOcc_setiTagName: ''
+  disableSupplierIdsForNonDoubleOcc: 1001,1002,2001,3001
+  testDisablingSupplierIdsForNonDoubleOcc: ''
+Hotels:
+  AllowPreviousCheckInUntilHour: '5'
+  MaxAP: '366'
+HrapiSchemaRegistry:
+  schema.registry.url: ${lookup(AIVEN_BOOTSTRAP_SCHEMA_SERVER)}
+HtlAmenitiesCache:
+  cacheName: htlAmenitiesCache
+HtlAmenitiesPreProcessor:
+  Enabled: 'true'
+  UseContentService: 'true'
+HtlAmenityMapping:
+  EnableHtlToRoomAmenityMapping: 'true'
+HttpAsyncClient_deal:
+  readTimeoutMills: '10000'
+HttpAsyncClient_integratedDeal:
+  readTimeoutMills: '10000'
+HttpAsyncClient_roomInfoWithoutImagesProto:
+  connectionTimeoutMills: '2000'
+  maxConnections: '1500'
+  readTimeoutMills: '2000'
+HttpAsyncClient_roominfoLiteProto:
+  connectionTimeoutMills: '2000'
+  maxConnections: '1500'
+  readTimeoutMills: '2000'
+HttpClientV2:
+  bamLoggingEnabled: 'true'
+  logRequestBody: 'true'
+HttpClient_ACECONTENTSVCS_PCMSearchLike:
+  connectionTimeoutMills: '1000'
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/acecontent-svcs/pcm/searchlike
+  readTimeoutMills: '1000'
+  useOverrideUrl: 'true'
+HttpClient_CUSTAPI_customer:
+  connectionTimeoutMills: '2000'
+  maxConnections: '1500'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/custapi/customer
+  readTimeoutMills: '2000'
+  useOverrideUrl: 'true'
+HttpClient_Cache22_hotelContent:
+  readTimeoutInMillis: '7000'
+HttpClient_Cache22_integratedListing:
+  connectTimeoutInMillis: '5000'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/hotelrates/core/cache22svcs/v0/integratedrates/listing
+  readTimeoutInMillis: '20000'
+  useOverrideUrl: 'true'
+HttpClient_Cache22_retailrates:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '5000'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/hotelrates/core/retailrates.do
+  readTimeoutInMillis: '20000'
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_bookedOffers:
+  ErrorManagerMaxBlacklistResourcePercentage: '30'
+  connectTimeoutInMillis: '350'
+  maxBlacklistPercentage: '30'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/cug/internal/v1/bookedOffers
+  readTimeoutInMillis: '2000'
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_bookingPopularity:
+  connectTimeoutInMillis: '350'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/bookingpopularity
+  readTimeoutInMillis: '500'
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_custpref:
+  ErrorManagerMaxBlacklistResourcePercentage: '0'
+  connectTimeoutInMillis: '350'
+  maxBlacklistPercentage: '0'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/preference
+  readTimeoutInMillis: '1500'
+  useDataCompression: 'true'
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_favorite:
+  ErrorManagerMaxBlacklistResourcePercentage: '0'
+  connectTimeoutInMillis: '350'
+  maxBlacklistPercentage: '0'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/favorite
+  readTimeoutInMillis: '500'
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_hotelPopularity:
+  ErrorManagerMaxBlacklistResourcePercentage: '0'
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '350'
+  maxBlacklistPercentage: '30'
+  maxRetry: '1'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/hotelpopularity
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '500'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_Clair2Services_hotelsearch:
+  ErrorManagerMaxBlacklistResourcePercentage: '0'
+  maxBlacklistPercentage: '0'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/hotelsearch
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_signInData:
+  ErrorManagerMaxBlacklistResourcePercentage: '0'
+  connectTimeoutInMillis: '350'
+  maxBlacklistPercentage: '0'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/signin/v1/data
+  readTimeoutInMillis: '500'
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_viewedHotelItins:
+  ErrorManagerMaxBlacklistResourcePercentage: '0'
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '350'
+  maxBlacklistPercentage: '30'
+  maxRetry: '1'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/viewedHotelItins
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '500'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_ClairServices_bulkHotelContentV2:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '500'
+  maxBlacklistPercentage: '50'
+  maxRetry: '1'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v2/bulkhotelcontent
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '1000'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_ClairServices_bulkHotelContentV3:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '500'
+  maxBlacklistPercentage: '50'
+  maxRetry: '1'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/content/v3/bulkhotelcontent
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '1000'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_ClairServices_bulkHotelReview:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '5000'
+  maxBlacklistPercentage: '50'
+  maxRetry: '1'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v1/bulkhotelreviews
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '1000'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_ClairServices_hotelOverAllScoreV2:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '3000'
+  maxBlacklistPercentage: '50'
+  maxRetry: '1'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v2/hoteloverallscore
+  readTimeoutInMillis: '3000'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_ClairServices_hotelOverAllScoreV2-DefaultRequestHeaders:
+  accept: application/json
+HttpClient_ClairServices_hotelReview:
+  bamLoggingEnabled: 'false'
+  connectTimeoutInMillis: '2000'
+  maxBlacklistPercentage: '50'
+  maxRetry: '1'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v1/hotelreviews
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '1000'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_ClairServices_viewedHotelItins:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '1000'
+  maxBlacklistPercentage: '50'
+  maxRetry: '1'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/clair/internal/v1/viewedHotelItins
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '500'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_DealEngineAPI_getHotelSetiTags:
+  connectTimeoutInMillis: '1000'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/dealengine/hotel/setiNames
+  readTimeoutInMillis: '1000'
+  useOverrideUrl: 'true'
+HttpClient_DealEngineAPI_getHotelsDealInfo:
+  connectTimeoutInMillis: '1000'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/dealengine/getHotelsDealInfo
+  readTimeoutInMillis: '1000'
+  useOverrideUrl: 'true'
+HttpClient_EngServices_CustomerSignInStatus:
+  connectTimeoutInMillis: '1000'
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/global2-svcs/gblsvcs/v1/customer/internal/signin/status
+  readTimeoutInMillis: '1000'
+  useOverrideUrl: 'true'
+HttpClient_EngServices_RecentHotelViews:
+  connectTimeoutInMillis: '50'
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/global2-svcs/gblsvcs/v1/clair/views
+  readTimeoutInMillis: '500'
+  useOverrideUrl: 'true'
+HttpClient_EngServices_SaaS:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '300'
+  maxRetry: '1'
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/seti-svcs/seti
+  readTimeoutInMillis: '400'
+  useDataCompression: 'true'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_EngServices_SaaS-DefaultRequestHeaders:
+  Accept: application/json
+  Content-Type: application/json
+HttpClient_HTLCONTSVCS_htlAmenities:
+  connectTimeoutInMillis: '500'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-content/content/hotel-amenities
+  readTimeoutInMillis: '2000'
+  useOverrideUrl: 'true'
+HttpClient_HTLCONTSVCS_htlContentWithDealids:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '500'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-content/content/with-deal-ids
+  readTimeoutInMillis: '2000'
+  useOverrideUrl: 'true'
+HttpClient_HTLRAPI_deal:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrapi/hotels/deal/listing
+  useOverrideUrl: 'true'
+HttpClient_HTLRCMS_roomInfoWithoutImagesProto:
+  connectionTimeoutMills: '2000'
+  maxConnections: '1500'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrcms/get-roominfo-withoutimages-proto/
+  readTimeoutMills: '2000'
+  useOverrideUrl: 'true'
+HttpClient_HTLRCMS_roominfoLiteProto:
+  connectTimeoutInMillis: '2000'
+  connectionTimeoutMills: '2000'
+  maxConnections: '1500'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrcms/get-roominfo-lite-proto/
+  readTimeoutInMillis: '2000'
+  readTimeoutMills: '2000'
+  useOverrideUrl: 'true'
+HttpClient_HTLROOMMERGE_merge:
+  connectTimeoutInMillis: '1000'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-room-merge/merge
+  readTimeoutInMillis: '2000'
+  useOverrideUrl: 'true'
+HttpClient_HTLROOMMERGE_nodaterooms:
+  connectTimeoutInMillis: '500'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-room-merge/nodaterooms
+  readTimeoutInMillis: '1000'
+  useOverrideUrl: 'true'
+HttpClient_HTLSORT_sortHotels:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '1000'
+  maxRetry: '1'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/hsortapi/hotels/v0/sortHotels
+  readTimeoutInMillis: '1200'
+  useDataCompression: 'true'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_HtlSolrCloudServices_hotelSearch:
+  connectTimeoutInMillis: '500'
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/
+  readTimeoutInMillis: '2000'
+  useOverrideUrl: 'true'
+HttpClient_HtlSolrCloudServices_metroRegionSearch:
+  connectTimeoutInMillis: '500'
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/rtlsearch/
+  readTimeoutInMillis: '2000'
+  useOverrideUrl: 'true'
+HttpClient_MLAPI_prediction:
+  connectTimeoutInMillis: '500'
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/ml-api/prediction
+  readTimeoutInMillis: '600'
+  useOverrideUrl: 'true'
+HttpClient_SETISVCS_ACE:
+  connectTimeoutInMillis: '500'
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/seti-svcs/ace
+  readTimeoutInMillis: '500'
+  useOverrideUrl: 'true'
+HttpClient_SolrCloudServices_metroRegionSearch:
+  UseWLM: 'true'
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '1000'
+  maxBlacklistPercentage: '50'
+  maxRetry: '1'
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/rtlsearch/
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '4000'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpClient_SolrServices_hotelSearch:
+  bamLoggingEnabled: 'true'
+  connectTimeoutInMillis: '500'
+  maxBlacklistPercentage: '50'
+  maxRetry: '1'
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/hotels/
+  proxyHost: ''
+  proxyPort: '0'
+  readTimeoutInMillis: '2000'
+  useDataCompression: 'true'
+  useMutualClientServerAuth: 'false'
+  useOverrideUrl: 'true'
+  useUrlEncoding: 'true'
+HttpHeaderSessionManagerUtil:
+  LogWarning: 'false'
+INFRAPP_ASH1_US401:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.ADMIN.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: INFRAPP_ASH1_US401_DEADQ
+  HostName: ash1-infrapp-401
+  InitialCapacity: '1'
+  MaxCapacity: '10'
+  MinCapacity: '1'
+  Port: '1520'
+  QueueManager: INFRAPP_ASH1_US401
+  SessionRefreshInterval: '300000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+INFRAPP_ASH1_US402:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.ADMIN.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: INFRAPP_ASH1_US402_DEADQ
+  HostName: ash1-infrapp-402
+  InitialCapacity: '1'
+  MaxCapacity: '10'
+  MinCapacity: '1'
+  Port: '1520'
+  QueueManager: INFRAPP_ASH1_US402
+  SessionRefreshInterval: '300000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+INFRAPP_ASH1_US403:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.ADMIN.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: INFRAPP_ASH1_US403_DEADQ
+  HostName: ash1-infrapp-403
+  InitialCapacity: '1'
+  MaxCapacity: '10'
+  MinCapacity: '1'
+  Port: '1520'
+  QueueManager: INFRAPP_ASH1_US403
+  SessionRefreshInterval: '300000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+INFRAPP_ASH1_US404:
+  AllowSessionRefresh: 'true'
+  BAMStatsEnabled: 'false'
+  CHANNEL: SYSTEM.ADMIN.SVRCONN
+  CapacityIncrement: '1'
+  CheckConnectionInterval: '600000'
+  ConnectionMode: Client
+  DeadLetterQueueName: INFRAPP_ASH1_US404_DEADQ
+  HostName: ash1-infrapp-404
+  InitialCapacity: '1'
+  MaxCapacity: '10'
+  MinCapacity: '1'
+  Port: '1520'
+  QueueManager: INFRAPP_ASH1_US404
+  SessionRefreshInterval: '300000'
+  SessionTimeout: '-1'
+  StatsInterval: '-1'
+InfraRequestResponseLogging:
+  HadoopCollectionRate: '1'
+InfrappAsynMsgGroupVA:
+  Algorithm: RRPP
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  LocalQM: 'false'
+  Mode: DISPATCH_MODE_JMS
+  ProcessFrequencyInSeconds: '5'
+  QueueCapacity: '1000'
+  QueueName: HTLAPI_HCROOMDB_QUEUE
+  RefreshTimeInSecs: '600'
+  RefreshType: EVENT_TIMER_REFRESH
+  TriggerQueueSize: '1'
+InfrappAsynMsgGroup_KAFKA:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '400'
+  ForceDefaultQueue: 'false'
+  ForceDefaultQueueExceptions: aim_remote_event
+  MQTimeoutMillis: '10000'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '3000'
+  QueueName: HTLAPI_HCROOMDB_QUEUE
+  SessionPoolName: KafkaAsyncClient
+  TriggerQueueSize: '2'
+InfrappAsynMsgGroup_ROUTER:
+  DEFAULT_DISPATCHERS: InfrappAsynMsgGroup_KAFKA
+InlineRates:
+  overrideRateDisplayOptionValue: N
+  useApiWay: 'false'
+IntegratedHotelMapper:
+  SavingsClaimDisclaimerON: 'true'
+  SavingsClaimON: 'false'
+  SetDealScoreDESKTOP: 'false'
+  SetDealScoreIPHONENEG: 'false'
+  SetDealScoreMOBILEWEB: 'false'
+  SetDisplayRank: 'false'
+  SetDisplayRankDESKTOP: 'false'
+  SetDisplayRankIPHONENEG: 'false'
+  SetDisplayRankMOBILEWEB: 'false'
+  SetRecmdScoreANDROIDNEG: 'true'
+  SetRecmdScoreANDROIDTABLET: 'true'
+  SetRecmdScoreDESKTOP: 'true'
+  SetRecmdScoreIPADNEG: 'true'
+  SetRecmdScoreIPHONENEG: 'true'
+  SetRecmdScoreMOBILEWEB: 'true'
+  restrictSopqAmenities: 'false'
+  returnSummaryDebugData: 'true'
+  sopqAmenitiesLookup: FINTRNT,SPOOL,PETALLOW,RESTRNT,FPRKING,AIRSHUTTL,FITSPA,FBRKFST,CASINO,INCLUSIVE,CONDO,BUSCNTR,BEDDING,NSMKFAC,ADULTONLY
+IntegratedListingControllerV0:
+  EnableSopqListingServiceV2: 'true'
+IntegratedListingResponseProcessor:
+  preProcessEnabled: 'true'
+IntegratedListingV2ResultCombinator:
+  minThresholdANDROIDNEG: '0.0'
+  minThresholdANDROIDTABLET: '0.0'
+  minThresholdIPADNEG: '0.0'
+  minThresholdIPHONENEG: '0.0'
+  offsetForInjectionANDROIDNEG: '6'
+  offsetForInjectionANDROIDTABLET: '6'
+  offsetForInjectionIPADNEG: '6'
+  offsetForInjectionIPHONENEG: ''
+  setRecmdScoreIPADNEG: 'false'
+  setRecmdScoreIPHONENEG: 'false'
+  stepSizeForInjectionANDROIDNEG: '6'
+  stepSizeForInjectionANDROIDTABLET: '6'
+IntegratedListingsControllerV0:
+  runBaselineTestsForSeti: 'false'
+InternalNetworks:
+  UserDataVLANS: 172.21.68.0/24,172.21.75.0/24,172.21.76.0/24,172.21.73.0/24,172.21.74.0/24,172.21.77.0/24,172.21.78.0/24,172.21.80.0/24,172.21.81.0/24,172.21.82.0/24,172.21.83.0/24,172.21.85.0/24,172.21.87.0/24,172.21.211.0/24,172.21.214.0/24,172.21.220.0/22,192.168.61.0/24,10.23.26.0/24,10.23.25.0/24,10.23.17.0/24,10.23.42.0/24,10.23.10.0/24,69.195.35.1/32,63.240.2.62/32,64.6.30.9/32,64.6.20.9/32,69.195.35.254/32,64.6.23.0/24,172.21.75.0/24,10.2.115.0/24,10.2.114.0/24,64.6.22.251/32,38.88.255.106/32,58.137.65.0/24,152.179.246.2/24,172.22.30.0/24,162.222.74.0/24,162.222.75.0/24,162.222.76.0/24,162.222.77.0/24,162.222.78.0/24,162.222.79.0/24,10.6.114.0/24,10.6.115.0/24,64.6.29.0/24,64.6.22.0/24,38.64.86.0/24,10.31.2.0/24,10.120.62.0/23,10.200.160.0/24,10.121.60.0/23,152.179.158.0/24,35.153.155.0/24,35.168.205.0/24,34.198.186.0/24,74.3.157.0/24,204.148.134.146/32,203.112.226.106/32,100.26.65.148/32,10.200.168.0/21,10.200.172.0/22,10.121.168.0/21,10.121.172.0/22,10.105.168.0/21,10.105.172.0/22,100.26.65.0/24,104.162.87.0/24,58.26.89.0/24,202.187.35.0/24,210.186.96.0/24,211.24.26.0/24,60.53.185.0/24,72.238.172.0/24,76.171.141.0/24,71.84.117.0/24,107.145.202.0/24,75.38.26.0/24,72.238.211.0/24,47.36.76.0/24,68.9.21.0/24,75.82.195.0/24,23.242.254.0/24,70.190.46.0/24,72.92.37.0/24,32.215.154.0/24,174.225.129.0/24,72.234.160.0/24,73.56.52.0/24,74.89.189.0/24,58.26.89.0/24,202.187.35.0/24,58.26.89.0/24,210.186.96.0/24,1.1.242.0/24,49.49.240.0/24,184.22.82.0/24,124.120.26.0/24,58.11.189.0/24,49.228.102.0/24,115.87.12.0/24,1.46.97.0/24,171.97.102.0/24,74.102.91.0/24,75.115.239.0/24,108.185.186.0/24,97.122.211.0/24,71.231.187.0/24,184.91.78.0/24,76.216.236.0/24,24.184.143.0/24,172.117.240.0/24,189.174.118.0/24,187.155.232.0/24,187.189.49.0/24,47.222.57.0/24,104.35.49.0/24,104.162.161.0/24,99.105.251.0/24,192.168.0.0/24,189.176.23.0/24,187.155.238.0/24,187.252.198.0/24,24.184.143.0/24,211.24.31.0/24,175.139.176.0/24,103.43.136.0/24,130.41.174.121/32,130.41.174.122/32,208.127.90.0/32,208.127.90.1/32,208.127.73.196/32,208.127.73.90/32,134.238.203.251/32,134.238.203.51/32,134.238.203.51/32,208.127.107.25/32,130.41.116.123/32,130.41.116.126/32,130.41.187.140/32,130.41.187.141/32,208.127.103.214/32,208.127.2.131/32,130.41.149.4/32,130.41.149.5/32,130.41.114.156/32,130.41.114.156/32
+KafkaAsyncClientHighVolume:
+  batch.num.messages: '200'
+  compression.codec: gzip
+  metadata.broker.list: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+  producer.type: async
+  queue.buffering.max.messages: '400'
+  queue.buffering.max.ms: '1000'
+  queue.enqueue.timeout.ms: '-1'
+  serializer.class: kafka.serializer.DefaultEncoder
+  ssl.endpoint.identification.algorithm: ''
+  ssl.truststore.location: /apps/home/eng/ssl/pcln_cacerts
+KafkaAsyncClientHighVolume_HV:
+  batch.num.messages: 200
+  compression.codec: gzip
+  metadata.broker.list: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+  producer.type: async
+  queue.buffering.max.messages: 400
+  queue.buffering.max.ms: 1000
+  queue.enqueue.timeout.ms: -1
+  serializer.class: kafka.serializer.DefaultEncoder
+  ssl.endpoint.identification.algorithm: ''
+  ssl.truststore.location: /apps/home/eng/ssl/pcln_cacerts
+KafkaCluster_HV:
+  max.request.size: '1000000'
+  ssl.endpoint.identification.algorithm: ''
+  ssl.truststore.location: /apps/home/eng/ssl/pcln_cacerts
+KafkaCluster_default:
+  max.request.size: '9000000'
+KafkaConsumers:
+  WatchdogAllowedUpdateDelayMillis: '300000'
+KafkaDefaultAMD:
+  ConcurrentSendDataThreadNum: '10'
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '1000'
+  QueueName: hrapi_data
+  SessionPoolName: KafkaAsyncClient
+  Streams: room_merge_grouping_HRAPI,hotel_api_stats_hrapi,META_HOTEL_CLICK_HRAPI,PRICING_STATS_HRAPI,cust_htl_lkup_HRAPI,details_rate_stats_HRAPI,http_reqres,EHCACHE_STATS_HRAPI,room_merge_dedupe_HRAPI,HYSTRIX_STATS_HRAPI,room_merge_HRAPI,hotel_rate_query_HRAPI,APPLN_LOGS_HRAPI,
+  TriggerQueueSize: '0'
+KafkaDefaultAMD_HV:
+  ComputeMetrics: 'false'
+  ConcurrentSendDataThreadNum: '20'
+  DataDumpDirectory: /tmp
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '500'
+  HighVolume: 'true'
+  Mode: KAFKA
+  MsgMaxRetries: '1'
+  ProcessFrequencyInSeconds: '5'
+  QueueCapacity: '2500'
+  QueueName: default_to_be_overriden
+  Streams: amd_stats_default
+  TriggerQueueSize: '0'
+  persistAMDData: 'true'
+  persistMessages: 'true'
+KafkaDefaultAMD_NV:
+  ComputeMetrics: 'false'
+  ConcurrentSendDataThreadNum: '10'
+  DataDumpDirectory: /tmp
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  HighVolume: 'false'
+  Mode: KAFKA
+  MsgMaxRetries: '1'
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '1250'
+  QueueName: default_to_be_overriden
+  Streams: amd_stats_default
+  TriggerQueueSize: '0'
+  persistAMDData: 'true'
+  persistMessages: 'true'
+KafkaDefaultHighVolumeAMD:
+  ConcurrentSendDataThreadNum: '30'
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '500'
+  HighVolume: 'true'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '2500'
+  QueueName: hrapi_data
+  SessionPoolName: KafkaClientHighVolume
+  Streams: rateInaccuracy_HRAPI,
+  TriggerQueueSize: '0'
+KafkaHelper:
+  DispatcherName: HotelCustomerActivityAMD
+KafkaProducer_Default:
+  ssl.endpoint.identification.algorithm: ''
+  ssl.truststore.location: /apps/home/eng/ssl/pcln_cacerts
+KeyStore:
+  ClientType: SESSION_SERVICES
+LHRateComparatorV2:
+  PerformCheckoutRateIdSort: 'true'
+LdapRedisConfiguration:
+  ClusterNames: ${lookup(REDIS_SECTION_NAME)}
+ListingRateProcessorPerHotel:
+  useCugRateWithoutRtlRates: 'false'
+ListingService:
+  DisableOpqTabBasedOnCityBind: 'true'
+  DisableOpqTabBasedOnCityBindForMobile: 'true'
+  DisableOpqTabBasedOnCityBind_DESKTOP: 'true'
+  DisableSopqOpqTabBasedOnNoExpressDealsSetiTest: 'true'
+  OverrideContentServiceVariant: 'true'
+  PRE_SORT_DEALS: 'true'
+  skipExpressDealWithoutRetailRate: 'false'
+  useHtlContentRepository: 'true'
+ListingsLDAPConfig:
+  savingsClaim2WinningSeti_1: DESKTOP,IPHONENEG,IPADNEG,MOBILEWEB,ANDROIDNEG
+  savingsClaimWinningSeti_1: DESKTOP,IPHONENEG,IPADNEG,MOBILEWEB,ANDROIDNEG
+ListingsTripFilteringService:
+  populateMaxFilterPricePerStayForBackwardCompatibility: 'false'
+Logback:
+  EnableDuplicateMessageFilter: 'false'
+LoggingAMD:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '250'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '5'
+  QueueName: http_reqres
+  SessionPoolName: KafkaAsyncClient
+  TriggerQueueSize: '5'
+MandatoryFeeDisclaimers:
+  includeFeeDisclaimers: 'false'
+MarkupCalculator:
+  MaxNumberOfTableDrivenCugs: '20'
+  MaxNumberOfTableDrivenCugsPerProgram: '20'
+  MultiCugPerRoomEnabled: 'true'
+  UseReferenceRetailRateForMultiCUG: 'false'
+  useNewCugRoomIdenOption: 'true'
+MaxmindLookup:
+  FileLocation: /apps/home/eng/maxmind/GeoIPCity.dat
+MemoryMonitor:
+  BAMStatsEnabled: 'true'
+  DisplayInMBs: 'true'
+  ProcessFreq: '10000'
+MerchantMarkup:
+  EnableMerchantTolerance: 'true'
+  ToleranceLimitByOccupancy: 'true'
+MerchantMarkupUtils:
+  commisionDefault: '0.15'
+MerchantRateBlock:
+  blockOwnerId: 8,14,16,17,19,24,38,42,50,105,108,135,137,8402,24402,130504,144603,622504
+  enableMerchantBlockList: 'true'
+MetaClickFromSlingshotPreProcessor:
+  EnabledForDetails: 'true'
+  MetaMessagesForListingsEnabled: 'true'
+MetaClickPreProcessor:
+  MetaMessagesForListingsEnabled: 'true'
+MetaClickProcessorV2:
+  sendMetaInfoToKafka: 'true'
+MetaPartnerClickProcessor:
+  AllowablePriceDifferenceInUSD: '1.0'
+  EnableDetailsMetaClickLogging: 'true'
+  MetaMessagesForDetailsEnabled: 'false'
+MetaURLCreator:
+  MetaId_RefId: 'false'
+  MetaId_Short_CO1492259: 'true'
+  MetaId_Short_GOOGLEMSS: 'true'
+  MetaId_Short_KAYAK: 'true'
+  MetaId_Short_QL2: 'true'
+  MetaId_Short_SKYSCANNER: 'true'
+  MetaId_Short_TRIPADVISOR: 'true'
+  MetaId_Short_TRIVAGO: 'true'
+MetroRegionSearchHelper:
+  metroRegionHollowComparisonEnabled: 'false'
+  metroRegionHollowEnabled: 'true'
+  metroRegionServiceGroup: HtlSolrCloudServices
+MetroRegionService:
+  enableMetroRegionService: 'true'
+MobileDealMobileExlusiveDealTest:
+  MobileDealVsMobileExclusiveMarginDiffPercent: '5'
+MultiOccCugDetail:
+  CreateAdditionalQueries-WORLDSPAN: 'false'
+MultiOccCugListing:
+  CreateAdditionalQueries-WORLDSPAN: 'false'
+MultiOccupancy:
+  AgodaAndPegsMultiOccRateQueryControl-CreateAdditionalRateQueries-AGODA: 'true'
+  AgodaAndPegsMultiOccRateQueryControl-CreateAdditionalRateQueries-PEGASUS: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-OnlySearchMatchedOccRateQuery-AGODA: 'true'
+  AgodaAndPegsMultiOccRateQueryControl-OnlySearchMatchedOccRateQuery-PEGASUS: 'false'
+  DiscardHotelsExceedingTotalAdults: 'false'
+  ExistingRateQueryControl: 'false'
+  UseApiCommonPromotionFactory: 'true'
+  preferDisplayPricePerStayOverRooms: 'false'
+MultiOccupancyDetail:
+  AgodaAndPegsMultiOccRateQueryControl-CreateAdditionalRateQueries-AGODA: 'true'
+  AgodaAndPegsMultiOccRateQueryControl-CreateAdditionalRateQueries-PEGASUS: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-CreateFourOccRateQueries-AGODA: 'true'
+  AgodaAndPegsMultiOccRateQueryControl-CreateMatchedOccGreaterThanFourRateQueries-AGODA: 'true'
+  AgodaAndPegsMultiOccRateQueryControl-CreateOneOccRateQueries-AGODA: 'true'
+  AgodaAndPegsMultiOccRateQueryControl-CreateOneOccRateQueries-AGODA-M: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-CreateOneOccRateQueries-AGODA-R: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-CreateThreeOccRateQueries-AGODA: 'true'
+  AgodaAndPegsMultiOccRateQueryControl-OnlySearchMatchedOccRateQuery-AGODA: 'true'
+  AgodaAndPegsMultiOccRateQueryControl-OnlySearchMatchedOccRateQuery-AGODA-U: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-OnlySearchMatchedOccRateQuery-PEGASUS: 'false'
+MultiOccupancyListing:
+  AgodaAndPegsMultiOccRateQueryControl-CreateAdditionalRateQueries-AGODA: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-CreateAdditionalRateQueries-AGODA-U: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-CreateAdditionalRateQueries-PEGASUS: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-OnlySearchMatchedOccRateQuery-AGODA: 'false'
+  AgodaAndPegsMultiOccRateQueryControl-OnlySearchMatchedOccRateQuery-PEGASUS: 'false'
+MultiOccupancySortControl:
+  preferMatchedOccupancyLogic: 'false'
+MultiOccupancyUtilV2:
+  VP_priceChildOcc_enabled: 'true'
+  cugSetiTag: HTL_BE_MULTIOCC_REVAMP
+  enableMaxOccValidation: 'true'
+NY_REDIS_14452:
+  BlockWhenExhausted: 'true'
+  ClientName: HRAPI
+  ConnectTimeoutInMillis: '5000'
+  ConvertPipelineAndTxResults: 'false'
+  HostName: 10.20.1.180
+  MaxIdleConnections: '10'
+  MaxTotalConnections: '100'
+  MaxWaitTimeMills: '5000'
+  MinEvictableIdleTimeMillis: '60000'
+  MinIdleConnections: '5'
+  NumTestsPerEvictionRun: '-1'
+  Password: ${secret(gsm://${lookup(pcln.environ)}_hrapi_gnae1_booking_history_redis_password)}
+  Port: '6379'
+  ReadTimeOutInMillis: '5000'
+  TestWhileIdle: 'true'
+  TimeBetweenEvictionRuns: '30000'
+OfferHistoryServiceClient:
+  AcceptedOfferValidStatusCodes: OA, ACCEPTED, TACCEPTED, O_ACCEPTED
+  enableBookedOffersV2: 'false'
+PCM_DAO:
+  CONTENT_KEYS: HTL*POLICY.*,SAVINGS_CLAIM*
+  SERVICE_GROUP: ACECONTENTSVCS
+  SERVICE_NAME: PCMSearchLike
+PLFToApplicationCodeMapping:
+  ANDNEG: MOBILE
+  HBC2UU: AFFILIATES
+  IOSNEG: MOBILE
+  MOBWEB: MOBILE
+  PCLH: DESKTOP
+  PCLN: DESKTOP
+  PHD: DESKTOP
+  XM2SOC: AFFILIATES
+PREPAID_FEE_RATES:
+  includePrepaidFeeRates: 'true'
+ParallelListingService:
+  dealServicePrimaryTimeoutMillis: '10000'
+  dealServicePrimaryTimeoutMillisT1000: '10000'
+  dealServicePrimaryTimeoutMillisT1000P94: '10000'
+  dealServicePrimaryTimeoutMillisT1000P97: '10000'
+  dealServicePrimaryTimeoutMillisT1200: '10000'
+  dealServicePrimaryTimeoutMillisT1500: '10000'
+  dealServicePrimaryTimeoutMillisT2000P90: '10000'
+  dealServicePrimaryTimeoutMillisT2000P95: '10000'
+  dealServicePrimaryTimeoutMillisT500: '10000'
+  dealServicePrimaryTimeoutMillisT800: '10000'
+  dealServiceSecondaryTimeoutMillis: '2000'
+  dealServiceSecondaryTimeoutMillisT1000: '1000'
+  dealServiceSecondaryTimeoutMillisT1000P94: '1000'
+  dealServiceSecondaryTimeoutMillisT1000P97: '1000'
+  dealServiceSecondaryTimeoutMillisT1200: '1200'
+  dealServiceSecondaryTimeoutMillisT1500: '1500'
+  dealServiceSecondaryTimeoutMillisT2000P90: '2000'
+  dealServiceSecondaryTimeoutMillisT2000P95: '2000'
+  dealServiceSecondaryTimeoutMillisT500: '500'
+  dealServiceSecondaryTimeoutMillisT800: '800'
+  dealServiceTimeoutMillis: '10000'
+  maxPartitionSize: '100'
+  maxPartitions: '200'
+  parallelRequestCompletionPercentageGate: '0.8'
+  parallelRequestCompletionPercentageGateT1000: '0.9'
+  parallelRequestCompletionPercentageGateT1000P94: '0.94'
+  parallelRequestCompletionPercentageGateT1000P97: '0.97'
+  parallelRequestCompletionPercentageGateT1200: '0.8'
+  parallelRequestCompletionPercentageGateT1500: '0.9'
+  parallelRequestCompletionPercentageGateT2000P90: '0.90'
+  parallelRequestCompletionPercentageGateT2000P95: '0.95'
+  parallelRequestCompletionPercentageGateT500: '0.8'
+  parallelRequestCompletionPercentageGateT800: '0.8'
+  parallelRequestCompletionPollIntervalMillis: '200'
+  parallelRequestCompletionPollIntervalMillisT1000: '200'
+  parallelRequestCompletionPollIntervalMillisT1000P94: '100'
+  parallelRequestCompletionPollIntervalMillisT1000P97: '100'
+  parallelRequestCompletionPollIntervalMillisT1200: '200'
+  parallelRequestCompletionPollIntervalMillisT1500: '200'
+  parallelRequestCompletionPollIntervalMillisT2000P90: '200'
+  parallelRequestCompletionPollIntervalMillisT2000P95: '200'
+  parallelRequestCompletionPollIntervalMillisT500: '100'
+  parallelRequestCompletionPollIntervalMillisT800: '100'
+  preFetchContent: 'true'
+  simulatedTimeouts: 500,800,1200,1600,2000,3000
+ParallelListingUtil:
+  ParallelServiceSetiAppCodes: DESKTOP,MOBILEWEB
+  ParallelServiceSetiName_ANDROIDNEG: BE_HTL_HRAPI_PARALLEL_LISTING_ANDROIDNEG_SETI
+  ParallelServiceSetiName_DESKTOP: BE_HTL_HRAPI_PARALLEL_LISTING_DESKTOP_SETI
+  ParallelServiceSetiName_IPHONENEG: BE_HTL_HRAPI_PARALLEL_LISTING_IPHONENEG_SETI
+  ParallelServiceSetiName_MOBILEWEB: BE_HTL_HRAPI_PARALLEL_LISTING_MOBILEWEB_SETI
+  UseParallelService: 'false'
+  XParallelServiceSetiName: BE_HTL_HRAPI_PARALLEL_LISTING_SETI
+  tieredTimeoutsSetiTagName: BE_HTL_PARALLEL_LISTING_TIMEOUTS_MV_SETI
+PartnerDeals:
+  partner_rates_plancodes: 11906473.*|11906518.*|11906566.*|11906587.*|11598393.*|11906602.*|11906620.*|11906635.*|11906646.*|11906655.*|11906657.*|11906674.*|11906690.*|9738423.*|13135817.*|13090766.*|13090771.*|13090781.*|13227174.*|13227146.*|13227129.*|13227177.*|13227181.*|13227138.*|13221065.*|13944691.*|13879812.*|13944834.*|13886805.*|13886800.*|5685470.*
+  spirit_ref_ids: XMHBC7921HL,XMHBC7921PK2,XMHBC9131,XMHBC9208
+PclnSchemaRegistry:
+  DefaultURL: ${lookup(AIVEN_BOOTSTRAP_SERVER)}
+  HVURL: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+PerimeterX:
+  IsPerXPocEnabledForAdjMarkup: 'true'
+  IsPerXPocEnabledForCug: 'true'
+PreviousBookingHistory:
+  ElapsedTimeParam: '36'
+  IncludeParam: PRODUCT_COUNTS,DETAILS
+PreviousBookingHistoryInterceptor:
+  UseConsolidatedServiceCall: 'true'
+  enableCDP: 'true'
+PriceGuidancePreProcessor:
+  Enabled: 'false'
+PricingEngineClientConfigs:
+  gRPCHost: ${lookup(GRPC_HOST_URL)}
+  streamingBatchSize: '50'
+PricingMLConfig:
+  CUG_NoiseAbsValue: '1.0'
+  MLDisabledPrograms: POINT_OF_SALE,AUDIENCE_DEALS,VALUE_DEAL,MOBILE_DEALS,EMPLOYEE_DEALS,MEMBER_DEALS,PACKAGE_DEALS
+  SOPQ_NoiseAbsValue: '1.0'
+  noiseEnabledProducts: SOPQ,CUG
+PricingMLPreProcessor:
+  Enabled: 'true'
+PricingMLUtils:
+  PricingMLFutureTimeout: '60'
+ProcessingFeeCalculation:
+  EnableFeeAdjustment: 'true'
+  HonorRHSEProcessingFees: 'false'
+  MerchantProcessingFeeSeti: HTL_MERCHANT_FEE_1
+  UseMarkupWithoutAdjustment: 'true'
+ProductQueryBuildingStrategyFactory:
+  useCugStrategyV2: 'true'
+Promotions:
+  COUPON_EXPIRED: Hmm... looks like this great coupon is a thing of the past or the
+    limit is reached.
+  CheckForHigherDiscountPercentForMinPromo: 'true'
+  CreateDiscountPromoFromGenericPromo: 'true'
+  DISPENSE_LIMIT_REACHED: Drat, this awesome offer has reached its limit.
+  EKEY_VALIDATION_FAILED: Sorry, but this awesome coupon has already been used.
+  EnableVariableMarkupPromo: 'true'
+  ExtraSingleUseInfoEnabled: 'true'
+  INTERNAL_SERVER_ERROR: Looks like we're experiencing some technical difficulties.  Please
+    try again later.
+  INVALID_COUPON: Hmm... looks like this coupon code isn't valid.
+  InfrappAsynMsgGroup: InfrappAsynMsgGroupVA
+  LoadCacheOnStartUp: 'true'
+  MULTI_USE_COUPON: Sorry, we cannot deactivate his coupon because it is multi use
+    coupon
+  MatchPricelineRatePromotionWithRoomRate: 'true'
+  NOT_A_REGISTERED_CUSTOMER: Sorry, but we need you to sign in to enjoy this coupon.
+  PROMO_VE_QUEUE_NAME: PROMO_VE_CIS_QUEUE
+  PromoCacheAutoRefresh: 'false'
+  PromoCacheAutoRefreshFrequencyMillis: '600000'
+  PromoCacheMaxRecords: '3000'
+  PromoFetchTimeToLiveMins: '30'
+  PromoTTLSeconds: '-1'
+  REDEEM_LIMIT_REACHED: Drat, this awesome offer has reached its limit.
+  SINGLE_CUSTOMER_VALIDATION_FAILED: Sorry, but this awesome coupon has already been
+    used.
+  SVCSRequest: 'true'
+  enableBlackList: 'false'
+PropertyPartitionerWithLocations:
+  maxPerferredHotelSizePerPartition: '50'
+  partitionByStarRating_enabled: 'true'
+QA_REDIS_14455:
+  BlockWhenExhausted: 'true'
+  ClientName: HRAPI
+  ConnectTimeoutInMillis: '5000'
+  ConvertPipelineAndTxResults: 'false'
+  HostName: 10.11.7.59
+  MaxIdleConnections: '10'
+  MaxTotalConnections: '100'
+  MaxWaitTimeMills: '5000'
+  MinEvictableIdleTimeMillis: '60000'
+  MinIdleConnections: '5'
+  NumTestsPerEvictionRun: '-1'
+  Password: ${secret(gsm://${lookup(pcln.environ)}_hrapi_booking_history_redis_password)}
+  Port: '6379'
+  ReadTimeOutInMillis: '5000'
+  TestWhileIdle: 'true'
+  TimeBetweenEvictionRuns: '30000'
+  TimeOut: '1000'
+  UseConnectionPooling: 'true'
+  useSSL: 'false'
+Queues:
+  BAMAlertQueue: S_HRAPI_STATS
+  BAMStatQueue: S_HRAPI_STATS
+  BAMTimingQueue: S_HRAPI_STATS
+RATE_DETAILS:
+  CustMatrixEnabled: 'false'
+  DefaultRateSourceOption: CACHE_GDS
+  EnableContentForNullRates: 'true'
+  ExpirationInhours: '4'
+  SetiTagNames: HTL_BE_PRICING_ML_MKUP_FEE,HTL_HC2_AGODA_DETAIL_RTL,HTL_HC2_AGODA_DETAIL_SOPQ,HTL_BE_PRICING_ML_MKUP_NOISE,HTL_HC2_BCOM_DETAILS,HTL_BCOM_OCC_FILTER,HTL_BE_META_PREF_RATE_SORT,HTL_BE_MULTI_CUG_PER_ROOM,HTL_BE_CUG_DEAL_TAXFEE,HTL_BE_GEN_PLATFORM_SUPERAGG,HTL_BE_SKIP_PCLNTAX_SUBTRACTION,HTL_BE_USE_DEFAULT_TAX_RATE_FOR_FEE,HTL_BE_SKIP_MER_RULE_RATE_DRIVEN,HTL_RETAIL_MARKUP_OVERRIDE,HTL_BE_AGD_U_PRECHECK_CHECKOUT,HTL_BE_AGD_R_PRECHECK_CHECKOUT,HTL_BE_SUPERAGG_PRECHECK_CHECKOUT,HTL_BE_SPIDER_FACADE_V2_TEST,HTL_FILTER_OUT_AGODA_REUTILIZED_RATES,HTL_INCREASE_MAX_NUMBER_CUGS,HTL_HONORING_CHECKOUT_RATE_WITH_ADJUSTMENT,HTL_BE_FILTER_OUT_AGODA_REUTILIZED_RATES,HTL_AGODA_U_STACK_RATES,HTL_BE_AGD_REQUEST_PATH_GATED_RATES,HTL_BE_SUPPLIER_DRIVEN_GEO_RATES,HTL_BE_CANCEL_TEXT_GENERATION,HTL_BE_APS_ON_MOBILE_RETEST,HTL_BE_RETAIL_MARKUP_NATIVE_APPS_PERCENTAGE_OVERRIDE,HTL_BE_HONOR_SELL_CRITERIA_PREBOOK,HTL_BE_BYPASS_SAVINGS_CRITERIA_PREBOOK,HTL_BE_AGD_GEO_RATES,HTL_BE_BCOM_GEO_RATES,HTL_BE_REMOVE_SOPQ_NET_SAVING_REQ,HTL_BE_RETEST_MANDATORY_FEE_COMPARISON,HTL_BE_CANCEL_POLICY_CATEGORY_TOLERANCE,HTL_BE_RETAIL_MARKUP_NON_NATIVE_APPS_PERCENTAGE_OVERRIDE,HTL_BE_AGD_R_SUPPLIER_DRIVEN_CUG,HTL_BE_CORRECT_MIN_RTL_RATE,HTL_DISABLE_OLD_HONORING_LOGIC,HTL_BE_PRICING_ENGINE,HTL_BE_CANCEL_TEXT_GENERATION_FOR_BCOM,HTL_BE_STANDARD_RATE_BENEFITS,HTL_DISABLE_OLD_HONORING_LOGIC,HTL_BE_GDS_PROMO_MIN_SAVINGS_REQ,HTL_BE_ENET_MERCHANT_MIN_MARKUP_REQ,HTL_BE_BCOM_MERCHANT_RATES,HTL_BE_BCOM_CHILD_RATES,HTL_BE_DEFAULT_TAX_RATE_FOR_FEE_MARKDOWN_RULE,HTL_BE_AGD_CHILD_RATES,HTL_LD_RETAIL_MARKUP_NATIVE_APPS_PERCENTAGE_OVERRIDE
+  StoreResponseForBooking: 'true'
+  StoreResponseTTLInHours: '4'
+  SuppressBeddingOptionsLogicEnabled: 'false'
+  futureWaitTimeoutInMS: '100'
+  futureWaitTimeoutInMSForNoDate: '500'
+  populateHotelReviews: 'true'
+  skipSimilarHotels: 'true'
+RCMSConfiguration:
+  enabled: 'true'
+  useRCMSLite: 'true'
+REQUEST_HEADER_SESSION_MANAGER:
+  LogInfoDuringExpire: 'false'
+  LogWarning: 'false'
+RateDrivenCUG:
+  CheckMultiCugRatesFlag_IPADNEG: 'true'
+  CheckMultiCugRatesFlag_IPHONENEG: 'true'
+  CheckPotentialDeals: 'true'
+  ExcludeForMobileDealsProgramName_ANDROIDNEG: 'false'
+  ExcludeForMobileDealsProgramName_ANDROIDTABLET: 'false'
+  ExcludeForMobileDealsProgramName_DESKTOP: 'false'
+  ExcludeForMobileDealsProgramName_IPADNEG: 'false'
+  ExcludeForMobileDealsProgramName_IPHONENEG: 'false'
+  ExcludeForMobileDealsProgramName_MOBILEWEB: 'false'
+  UseRateDrivenMerchantCugWithoutReferenceRate: 'true'
+  forceMarkupCrxTable: 'false'
+  useMobileDealsCugProgramName: 'true'
+RateDrivenCugFee:
+  enableRtlFee: 'true'
+RateFilteringService:
+  filterLowOccRate: 'false'
+RateGdsRateTypeComparator:
+  AGODA_AGENCY: '30'
+  AGODA_M: '4'
+  AGODA_R: '30'
+  AGODA_U: '4'
+  AGODA_UNIVERSAL: '4'
+  BOOKING_AGENCY: '20'
+  BOOKING_R: '20'
+  ENET_D: '7'
+  ENET_DISCLOSED: '7'
+  ENET_M: '7'
+  ENET_MERCHANT: '7'
+  ENET_U: '5'
+  ENET_UNIVERSAL: '5'
+  HOTELBEDS_OPAQUE: '6'
+  HOTELBEDS_P: '6'
+  PEGASUS_M: '10'
+  PEGASUS_MERCHANT: '10'
+  TOURICO_OPAQUE: '3'
+  TOURICO_P: '3'
+  WORLDSPAN_AGENCY: '40'
+  WORLDSPAN_D: '2'
+  WORLDSPAN_DISCLOSED: '2'
+  WORLDSPAN_OPAQUE: '1'
+  WORLDSPAN_P: '1'
+RateIdentifier:
+  V4Decryption: 'true'
+  V4Encryption: 'true'
+RateMapper:
+  IncludeFeeWithTaxes: 'true'
+  MapBaseRate: 'true'
+RateQueryStats:
+  Enabled: 'false'
+  KafkaTopic: hrapi_data
+RateQueryStatsAMD:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '250'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '5'
+  QueueName: hotel_rate_query_HRAPI
+  TriggerQueueSize: '1'
+RealtimeSearchDataDetailRequestStatsAMD:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '5'
+  QueueCapacity: '1000'
+  QueueName: htl_detail_request_stats
+  SessionPoolName: KP01102_Schema
+  TriggerQueueSize: '1'
+  persistAMDData: 'false'
+RealtimeSearchDataListRequestStatsAMD:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '5'
+  QueueCapacity: '1000'
+  QueueName: htl_list_request_stats
+  SessionPoolName: KP01102_Schema
+  TriggerQueueSize: '1'
+  persistAMDData: 'false'
+RealtimeSearchDataStats:
+  DetailRequestSchemaId: '281'
+  DetailRequestTopic: htl_detail_request_stats
+  ListRequestSchemaId: '254'
+  ListRequestTopic: htl_list_request_stats
+  enabled: 'true'
+RecentlyViewedHelper:
+  RecentlyViewedHotelsTimeOut: '60'
+  ServiceGroup: Clair2Services
+  ServiceName: viewedHotelItins
+RecentlyViewedHotelsPreProcessor:
+  Enabled: 'true'
+  enableForApps: 'true'
+  enableForMweb: 'true'
+RecmdScore:
+  TagANDROIDNEG: DATA_SCIENCE_RECMD_APP
+  TagANDROIDTABLET: DATA_SCIENCE_RECMD_APP
+  TagIPADNEG: DATA_SCIENCE_RECMD_APP
+  TagIPHONENEG: DATA_SCIENCE_RECMD_APP
+  TopXNumANDROIDNEG: '20'
+  TopXNumANDROIDTABLET: '20'
+  TopXNumIPADNEG: '20'
+  TopXNumIPHONENEG: '20'
+RefreshableDataDAOClassNames:
+  Class10: com.priceline.infraextn.cache.pcm.PCMContentRefreshableDao
+  Class2: com.priceline.htlrapi.integrated.cug.dao.HotelPricingSetiTagDao
+  Class3: com.priceline.htlrapi.integrated.filters.exclusion.AffiliateWhiteLabelExclusionDAO
+RefundInfo:
+  FlexCancelWithFeeAndDeadline: ^(for the room)(?!.*(if you decide)).*(you will be
+    charged).*(any remaining).*(refunds or cancellations).*
+  FreeCancelWithDeadline: ^(for the room)(?!.*(if you decide))(?!.*(you will be charged)).*(refunds
+    or cancellations).*
+  FreeCancelWithFlexPolicy: ^(for the room).*(if you decide).*(you will be charged).*(any
+    remaining).*(refunds or cancellations).*
+  NonRefundable: .*(if you cancel).*
+RequestPathGatedRates:
+  enabled: 'true'
+RetailApiConfiguration:
+  previousBookingHistoryPattern: /**
+RetailApiMetrics:
+  EnableConsoleReporting: 'false'
+  EnableGraphiteReporting: 'false'
+  Enabled: 'false'
+RetailMarkupCalculator:
+  setEntityRuleId: 'true'
+RetailRateDetail:
+  SavingsClaimON: 'true'
+RetailRateDetailService:
+  DealsAsyncEnabled: 'false'
+  InsertToItinCacheAsync: 'false'
+  InsertToItinCacheDB: 'false'
+RetailRateFinder:
+  MaxRoomsForPegasusFilteringToApply: '2'
+  PegasusFilteringForMaxRoomsEnabled: 'false'
+RetailRateQueryBuildingStrategy:
+  enableBlacklisting: 'false'
+RetailRatesBuilderV2:
+  OccupancySegmentationEnabled: 'true'
+RetailRatesSummaryBuilder:
+  UpdatePromoForAllInclusive: 'false'
+ReviewScoreCache:
+  enableStats: 'true'
+  evictionPolicy: LFU
+  maxEntriesLocalHeap: '600000'
+  name: reviewScoreFindInCache
+  tti: '3600'
+  ttl: '86400'
+RoomGDSRankScore:
+  AGODA_M: '3'
+  AGODA_R: '-2'
+  AGODA_U: '3'
+  BOOKING_R: '-1'
+  ENET_M: '2'
+  ENET_U: '2'
+  PEGASUS_M: '1'
+RoomLeftTest:
+  threshold: '2'
+  threshold_for_detail: '2'
+SETI:
+  IncludeVariantId: 'true'
+  InfraAppEnabled: 'false'
+  LogInfoDuringExpire: 'false'
+SETI-Session:
+  LogInfoDuringExpire: 'false'
+  LogWarning: 'false'
+SOPQDealType:
+  ADULTONLY: '1'
+  ALLINCLUSIVE: '2'
+  CASINO: '3'
+  CONDO: '4'
+  EnableAdultOnlyDealType: 'true'
+  EnableNewSopqDealType: 'true'
+  HOTEL: '5'
+SOPQDealsCreator:
+  FilterPreExpressDealSelection: 'true'
+  OnlyHotelAsDealType: 'false'
+SOPQViaDealEngine:
+  AGODA_BedChoiceEnabled: 'true'
+  ENET_BedChoiceEnabled: 'true'
+  EnableRoomNameEnhanceBeforeMakingDeal: 'true'
+  HOTELBEDS_BedChoiceEnabled: 'true'
+  IncludeViewAndAmenity: 'false'
+  IsGDSEnabledForRoomNameCleansing: 'true'
+  PEGASUS_BedChoiceEnabled: 'true'
+  TOURICO_BedChoiceEnabled: 'true'
+  WORLDSPAN_BedChoiceEnabled: 'false'
+  enabled: 'true'
+  setiName_SopqSavingCheck: HTL_BE_SOPQ_SAVING_PRECHECK_RETEST
+  threshold_percent_SopqSavingCheck: '15'
+SchemaRegistry:
+  identity.max.capacity: '10'
+  schema.registry.url: ${lookup(AIVEN_BOOTSTRAP_SCHEMA_SERVER)}
+ScrubRetailDetailResponse:
+  EnableScrubbing: 'true'
+  GdsName_ANDROIDNEG: 'false'
+  GdsName_IPHONENEG: 'false'
+  PlanCode_ANDROIDNEG: 'false'
+  PlanCode_IPHONENEG: 'false'
+  ProgramCode_ANDROIDNEG: 'false'
+  ProgramCode_IPHONENEG: 'false'
+  RateAccessCode_ANDROIDNEG: 'false'
+  RateAccessCode_IPHONENEG: 'false'
+  RateTypeCode_ANDROIDNEG: 'false'
+  RateTypeCode_IPHONENEG: 'false'
+  RateTypeGroupName_ANDROIDNEG: 'false'
+  RateTypeGroupName_IPHONENEG: 'false'
+  RoomCode_ANDROIDNEG: 'false'
+  RoomCode_IPHONENEG: 'false'
+  RoomDisplayName_ANDROIDNEG: 'false'
+  RoomDisplayName_IPHONENEG: 'false'
+SegmentedPricingV1:
+  Enabled: 'true'
+SemiOpaqueUnlockDeal:
+  PREVBOOKFULL: Want to book again?
+  PREVBOOKPARTIAL: 'Hint: You''ve booked here before ;)'
+SemiOpqCacheService:
+  EnableSOLRRefId: 'true'
+  LocalMode: 'false'
+  RefIds: PMMOBILE,PLPRICELINE,PHD
+  StatsEnabled: 'true'
+  UseSlingshotDesktopUrl: 'true'
+  UseSlingshotUrl: 'true'
+  pclnUrlPrefix: http://www.priceline.com/hotelxd/searchDeals.do?
+  useTypeahead: 'true'
+ServiceURLWLM:
+  TestURLPage: ?cguid=hrapiwlmtest
+SessionCluster:
+  ContactPoints: 10.5.94.18,10.5.95.32,10.5.94.29
+  CqlTracingEnabled: 'false'
+  DCName: ASH1
+  MetricsEnabled: 'false'
+  TokenAwareLoadBalancingEnabled: 'true'
+  UseNewestDriverVersion: 'false'
+  UseSetTimestampForTimestampDataTypes: 'true'
+SessionCluster_Connect:
+  Compression: SNAPPY
+  CompressionEnabled: 'false'
+  CqlTracingEnabled: 'false'
+SessionCluster_Pool:
+  HeartbeatIntervalSeconds: '30'
+  IdleTimeoutSeconds: '60'
+  InitialConnectionsPerHost: '8'
+  MaxConnectionsPerHost: '8'
+  MaxSimultRequestsPerConnection: '2048'
+  MinSimultRequestsPerConnection: '25'
+  PoolTimeoutMillis: '1000'
+SessionConfig:
+  SessionTimeOut: '20000'
+  TimeToLive: '25000'
+SessionManagerBasedBlacklistingHandler:
+  errorCountMapSize: '50000'
+SessionService:
+  BaseUrl: ${lookup(HTL_SERVICE_KEY)}/cas-session-war/cassdb/datastash
+SetiClient:
+  UseAceEndpoint: 'true'
+  async: 'false'
+SetiCommand:
+  SetiServiceGroupName: SETISVCS
+  logErrorTagNames: 'false'
+SettingMarkupAmountDuringMerge:
+  enabled: 'true'
+SimilarHotels:
+  SetiFutureTimeoutMillis: '500'
+  floorReviewScores: 'true'
+  minExactMatchHotelsToReturn: '2'
+  restrictedHotels: ''
+  retailOnlySeti: 'true'
+  reviewScoreVariance: '0.10'
+  sopqOnlySeti: 'true'
+  useHRAPI: 'true'
+SopqDisplayPriceCalculator:
+  useSopqDisplayPriceRequest: 'true'
+SopqGdsRateTypeCodePriority:
+  AGODA_M: '10'
+  AGODA_P: '12'
+  AGODA_U: '17'
+  ENET_D: '15'
+  ENET_M: '11'
+  ENET_P: '16'
+  HOTELBEDS_M: '7'
+  HOTELBEDS_P: '6'
+  PEGASUS_M: '9'
+  TOURICO_P: '5'
+  WORLDSPAN_D: '13'
+  WORLDSPAN_P: '14'
+SopqRateFilteringService:
+  Enabled: 'true'
+SopqSelectCugDealHelper:
+  appcToSetupEUInSummary: DESKTOP,MOBILEWEB,IPHONENEG,IPADNEG,ANDROIDNEG,ANDROIDTABLET
+  enableSetupUnlockInfoInSummary: 'true'
+SortCache22RatesForListing:
+  enabled: 'true'
+SortCommandFactory:
+  remoteSortEnabled: 'true'
+SortMicroService:
+  BlendedHDREnabled: 'true'
+  BlendedNonHDREnabled: 'true'
+  Enabled: 'true'
+  NonSopqNonBlendedSetiTagANDROIDNEG: DATA_SCIENCE_SORT_SERVICE_NON_BLENDED
+  NonSopqNonBlendedSetiTagANDROIDTABLET: DATA_SCIENCE_SORT_SERVICE_NON_BLENDED
+  NonSopqNonBlendedSetiTagDESKTOP: DATA_SCIENCE_SORT_SERVICE_NON_BLENDED
+  NonSopqNonBlendedSetiTagIPADNEG: DATA_SCIENCE_SORT_SERVICE_NON_BLENDED
+  NonSopqNonBlendedSetiTagIPHONENEG: DATA_SCIENCE_SORT_SERVICE_NON_BLENDED
+  NonSopqNonBlendedSetiTagMOBILEWEB: DATA_SCIENCE_SORT_SERVICE_NON_BLENDED
+  SopqEnabled: 'true'
+  SortSetiTag: DATA_SCIENCE_SORT_SERVICE_RMT
+SortReqConveter:
+  sendRefId: 'true'
+SortServiceMapper:
+  setPromosInSortReq: 'true'
+SpiderFacadeV2:
+  SetiTagName: HTL_BE_SPIDER_FACADE_V2_TEST
+  enabled: 'true'
+SpiderSearchEventsAMD:
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  HighVolume: 'true'
+  KafkaCluster: HV
+  Mode: KAFKA
+  ProcessFrequencyInSeconds: '5'
+  QueueName: search_events
+  SessionPoolName: KafkaAsyncClientHighVolume
+  TriggerQueueSize: '1'
+  UseSpecifiedKafkaCluster: 'true'
+SplunkMeterConfig:
+  Enabled: 'true'
+  ReportingIntervalSeconds: '60'
+  StreamName: EHCACHE_STATS_HRAPI
+SponsoredListings:
+  Enabled: 'false'
+  EnabledMetaRids: ''
+  EnabledSemRids: ''
+  SortOrderAllowList: HDR,PROXIMITY
+  maxBiddersRequested: '10'
+StreamAttributesMapping:
+  APPLN_LOGS_HRAPI_IsHighVolume: 'false'
+  APPLN_LOGS_HRAPI_QueueName: hrapi_data_2
+  APPLN_LOGS_HRAPI_ShareAmdInstance: 'false'
+  APPLN_LOGS_HRAPI_StreamName: APPLN_LOGS_HRAPI
+  EHCACHE_STATS_HRAPI_IsHighVolume: 'false'
+  EHCACHE_STATS_HRAPI_QueueName: hrapi_data_2
+  EHCACHE_STATS_HRAPI_ShareAmdInstance: 'false'
+  EHCACHE_STATS_HRAPI_StreamName: EHCACHE_STATS_HRAPI
+  HYSTRIX_STATS_HRAPI_IsHighVolume: 'false'
+  HYSTRIX_STATS_HRAPI_QueueName: hrapi_data
+  HYSTRIX_STATS_HRAPI_ShareAmdInstance: 'false'
+  HYSTRIX_STATS_HRAPI_StreamName: HYSTRIX_STATS_HRAPI
+  META_HOTEL_CLICK_HRAPI_IsHighVolume: 'false'
+  META_HOTEL_CLICK_HRAPI_QueueName: meta_hotel_clickthrough
+  META_HOTEL_CLICK_HRAPI_ShareAmdInstance: 'false'
+  META_HOTEL_CLICK_HRAPI_StreamName: META_HOTEL_CLICK_HRAPI
+  PRICING_STATS_HRAPI_IsHighVolume: 'false'
+  PRICING_STATS_HRAPI_QueueName: hrapi_data
+  PRICING_STATS_HRAPI_ShareAmdInstance: 'false'
+  PRICING_STATS_HRAPI_StreamName: PRICING_STATS_HRAPI
+  amd_stats_default_ClusterName: default
+  amd_stats_default_IsHighVolume: 'false'
+  amd_stats_default_QueueName: kafkamon_amd_stats_data
+  amd_stats_default_SessionPoolName: KP01102_Default
+  amd_stats_default_ShareAmdInstance: 'true'
+  amd_stats_default_StreamName: amd_stats_default
+  cust_htl_lkup_HRAPI_IsHighVolume: 'false'
+  cust_htl_lkup_HRAPI_QueueName: hrapi_mysql_data
+  cust_htl_lkup_HRAPI_ShareAmdInstance: 'true'
+  cust_htl_lkup_HRAPI_StreamName: cust_htl_lkup_HRAPI
+  details_rate_stats_HRAPI_IsHighVolume: 'false'
+  details_rate_stats_HRAPI_QueueName: hrapi_data
+  details_rate_stats_HRAPI_ShareAmdInstance: 'true'
+  details_rate_stats_HRAPI_StreamName: details_rate_stats_HRAPI
+  hotel_api_stats_hrapi_IsHighVolume: 'false'
+  hotel_api_stats_hrapi_QueueName: hotel_api_data
+  hotel_api_stats_hrapi_ShareAmdInstance: 'true'
+  hotel_api_stats_hrapi_StreamName: hotel_api_stats_hrapi
+  hotel_rate_query_HRAPI_IsHighVolume: 'false'
+  hotel_rate_query_HRAPI_QueueName: hrapi_data
+  hotel_rate_query_HRAPI_ShareAmdInstance: 'true'
+  hotel_rate_query_HRAPI_StreamName: hotel_rate_query_HRAPI
+  http_reqres_IsHighVolume: 'false'
+  http_reqres_QueueName: http_reqres
+  http_reqres_ShareAmdInstance: 'true'
+  http_reqres_StreamName: http_reqres
+  rateInaccuracy_HRAPI_IsHighVolume: 'false'
+  rateInaccuracy_HRAPI_QueueName: hotel_ldi_data
+  rateInaccuracy_HRAPI_ShareAmdInstance: 'false'
+  rateInaccuracy_HRAPI_StreamName: rateInaccuracy_HRAPI
+  room_merge_HRAPI_IsHighVolume: 'false'
+  room_merge_HRAPI_QueueName: htlapi_roommerge
+  room_merge_HRAPI_ShareAmdInstance: 'false'
+  room_merge_HRAPI_StreamName: room_merge_HRAPI
+  room_merge_dedupe_HRAPI_IsHighVolume: 'false'
+  room_merge_dedupe_HRAPI_QueueName: htlapi_roommerge
+  room_merge_dedupe_HRAPI_ShareAmdInstance: 'false'
+  room_merge_dedupe_HRAPI_StreamName: room_merge_dedupe_HRAPI
+  room_merge_grouping_HRAPI_IsHighVolume: 'false'
+  room_merge_grouping_HRAPI_QueueName: htlapi_roommerge
+  room_merge_grouping_HRAPI_ShareAmdInstance: 'false'
+  room_merge_grouping_HRAPI_StreamName: room_merge_grouping_HRAPI
+StringManager:
+  internStringsDefault: 'true'
+SuppressBedOption:
+  SuppressCugBedOption: 'true'
+TableDrivenRelatedRateDrivenCugValidator:
+  EnableDuplicateCheckForSellCriteria: 'true'
+TableDrivenViaDealEngine:
+  threshold_percent_TableDrivenSavingCheck: '12'
+TomcatJMXStats:
+  StatsFrequencyMillis: '60000'
+  ThreadPoolNames: name="http-nio-8443"
+  ThreadPoolObjectName: Tomcat:type=ThreadPool,
+UnifedReporter:
+  ReportPercentiles: 'false'
+  UnifiedGraphiteReporterEnabled: 'false'
+  UnifiedKafkaReporterEnabled: 'false'
+  UnifiedZabbixReporterEnabled: 'true'
+UnifiedGraphiteReporter:
+  GraphiteMetricsServer: ny-novstats-001
+  GraphiteMetricsServerPort: '6500'
+UnifiedSearch:
+  enableNewEncryption: 'true'
+UnifiedZabbixReporter:
+  ZabbixMetricsServerPort: '10051'
+  ZabbixServer: zabbix-prod
+UserAuthenticationInterceptor:
+  Enabled: 'true'
+  ExcludeUriPatterns: /**/listing/nodate/**,/**/listing/cityinfo/**,/**/listing/dynamicdetails/**,/**/listing/dynamicallocation/**,/**/listing/caresbpgsearch/**
+  IncludeUriPatterns: /**/listing/**,/**/integratedlisting/**
+  PassiveSignIn: 'true'
+  PassiveSignInDisabledAppCodes: IPHONENEG,ANDROIDNEG,IPADNEG,ANDROIDTABLET,MOBILEWEB
+  PopulateUserBookingCounts: 'false'
+  PopulateUserBookingOnlyForInvalidAT: 'false'
+  UseSignInServiceForATValidation: 'true'
+UserPreviousBookingHistoryService:
+  bookedOffersSeti: BOOKED_OFFERS
+  readTimeOutForSetiDefault: '1600'
+  readTimeOutForSetiVariant: '1600'
+  splunkHistoryEnabled: 'true'
+VA_REDIS_14452:
+  BlockWhenExhausted: 'true'
+  ClientName: HRAPI
+  ConnectTimeoutInMillis: '5000'
+  ConvertPipelineAndTxResults: 'false'
+  HostName: 10.20.1.188
+  MaxIdleConnections: '10'
+  MaxTotalConnections: '100'
+  MaxWaitTimeMills: '5000'
+  MinEvictableIdleTimeMillis: '60000'
+  MinIdleConnections: '5'
+  NumTestsPerEvictionRun: '-1'
+  Password: ${secret(gsm://${lookup(pcln.environ)}_hrapi_guse4_booking_history_redis_password)}
+  Port: '6379'
+  ReadTimeOutInMillis: '5000'
+  TestWhileIdle: 'true'
+  TimeBetweenEvictionRuns: '30000'
+VPHotelBedsNonRefundable:
+  enabled: 'false'
+aiven:
+  bootstrap.servers: ${lookup(AIVEN_BOOTSTRAP_SERVER)}
+  bootstrap.servers.hv: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+  password: ${secret(gsm://${lookup(pcln.environ)}_hrapi_aiven_credentials_password)}
+  schema.registry.url: ${lookup(AIVEN_BOOTSTRAP_SCHEMA_SERVER)}
+  schema.registry.url.hv: ${lookup(AIVEN_BOOTSTRAP_SCHEMA_SERVER_HV)}
+  username: ${secret(gsm://${lookup(pcln.environ)}_hrapi_aiven_credentials_username)}
+com.priceline.corecomponents.repository.HotelReviewOverallScoreRepository:
+  FutureTimeoutMillis: '800'
+custEmailBlacklistCache:
+  dynamicUpdateEnabled: 'true'
+  maxSize: '100000'
+  tti: '-1'
+  ttl: '300'
+hotelPropertyCache:
+  dynamicUpdateEnabled: 'true'
+  maxSize: '1000000'
+  tti: '-1'
+  ttl: '3600'
+  ttlCreationMod: '300'
+hotelPropertyMappingCache:
+  dynamicUpdateEnabled: 'true'
+  maxSize: '1000000'
+  tti: '-1'
+  ttl: '3600'
+htlAmenitiesCache:
+  dynamicUpdateEnabled: 'true'
+  maxSize: '600000'
+  tti: '-1'
+  ttl: '86400'
+  ttlCreationMod: '600'
+htlContentCache:
+  dynamicUpdateEnabled: 'true'
+  maxContentPartitionSize: '200'
+  maxContentPartitions: '2'
+  maxSize: '600000'
+  tti: '-1'
+  ttl: '14400'
+htlPricingMLCache:
+  dynamicUpdateEnabled: 'true'
+  maxSize: '1500000'
+  tti: '-1'
+  ttl: '0'
+htlRoomContentCache:
+  dynamicUpdateEnabled: 'true'
+  maxSize: '600000'
+  tti: '-1'
+  ttl: '86400'
+markUpCalculator:
+  MaxNumberOfTableDrivenCugs: '5'
+  MultiCugPerRoomEnabled: 'true'
+metroRegionCache:
+  dynamicUpdateEnabled: 'true'
+  maxSize: '30000'
+  nearExpirationThresholdSeconds: '600'
+  setiTagName: HTL_BE_HRAPI_METRO_REGION_CACHE_SETI
+  tti: '-1'
+  ttl: '3600'

@@ -1,0 +1,303 @@
+HC2Configs:
+  gRPCSecurityEnabled: false
+  grpcExecutorThreads: N
+  grpcExecutorThreadsCpuMultiplier: 1.0
+  grpcExecutorType: none
+  optimizedDecompressionEnabled: true
+HTLAFF_NY_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_gnae1_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_gnae1_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL
+HTLAFF_QA_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL
+HTLAFF_VA_RO:
+  AllowConnRefresh: true
+  AllowShrinking: true
+  CacheRows: 150
+  CapacityIncrement: 1
+  ConnDelay: 0
+  ConnRefreshInterval: 30000
+  ConnectionCheckSQL: SELECT 1 FROM DUAL
+  ConnectionTimeout: 30000
+  DBDriver: com.mysql.jdbc.Driver
+  DBLogin: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_guse4_db_login)}
+  DBPassword: ${secret(gsm://${lookup(pcln.environ)}_hrapi_htlaff_guse4_db_password)}
+  DBURL: ${lookup(HTLAFF_DB_URL)}
+  DriverType: 2
+  IDatabaseSource: com.priceline.db.MYSqlDataBaseSourceImplV2
+  InitialCapacity: 1
+  MaxCapacity: 1
+  MinCapacity: 1
+  PoolType: Hikari
+  ShrinkingInterval: 300000
+  Tracing: true
+  URLMode: LOCAL    
+HttpClient_ACECONTENTSVCS_PCMSearchLike:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/acecontent-svcs/pcm/searchlike
+  useOverrideUrl: 'true'
+HttpClient_CUSTAPI_customer:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/custapi/customer
+  useOverrideUrl: 'true'
+HttpClient_Cache22_integratedListing:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/hotelrates/core/cache22svcs/v0/integratedrates/listing
+  useOverrideUrl: 'true'
+HttpClient_Cache22_retailrates:
+  bamLoggingEnabled: 'true'
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/hotelrates/core/retailrates.do
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_bookedOffers:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/cug/internal/v1/bookedOffers
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_bookingPopularity:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/bookingpopularity
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_custpref:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/preference
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_favorite:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/favorite
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_hotelPopularity:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/hotelpopularity
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_hotelsearch:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/hotelsearch
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_signInData:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/signin/v1/data
+  useOverrideUrl: 'true'
+HttpClient_Clair2Services_viewedHotelItins:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/cas-stats-war/cassdb/clair/internal/v1/viewedHotelItins
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_bulkHotelContentV2:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v2/bulkhotelcontent
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_bulkHotelContentV3:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/content/v3/bulkhotelcontent
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_bulkHotelReview:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v1/bulkhotelreviews
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_hotelOverAllScoreV2:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v2/hoteloverallscore
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_hotelOverAllScoreV2-DefaultRequestHeaders:
+  accept: application/json
+HttpClient_ClairServices_hotelReview:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/v1/hotelreviews
+  useOverrideUrl: 'true'
+HttpClient_ClairServices_viewedHotelItins:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/cas-content/cassdb/clair/internal/v1/viewedHotelItins
+  useOverrideUrl: 'true'
+HttpClient_DealEngineAPI_getHotelSetiTags:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/dealengine/hotel/setiNames
+  useOverrideUrl: 'true'
+HttpClient_DealEngineAPI_getHotelsDealInfo:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/dealengine/getHotelsDealInfo
+  useOverrideUrl: 'true'
+HttpClient_EngServices_CustomerSignInStatus:
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/global2-svcs/gblsvcs/v1/customer/internal/signin/status
+  useOverrideUrl: 'true'
+HttpClient_EngServices_RecentHotelViews:
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/global2-svcs/gblsvcs/v1/clair/views
+  useOverrideUrl: 'true'
+HttpClient_EngServices_SaaS:
+  overrideUrl: ${lookup(RMS_PCI_SERVICE_KEY)}/seti-svcs/seti
+  useOverrideUrl: 'true'
+HttpClient_EngServices_SaaS-DefaultRequestHeaders:
+  Accept: application/json
+  Content-Type: application/json
+HttpClient_HTLCONTSVCS_htlAmenities:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-content/content/hotel-amenities
+  useOverrideUrl: 'true'
+HttpClient_HTLCONTSVCS_htlContentWithDealids:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-content/content/with-deal-ids
+  useOverrideUrl: 'true'
+HttpClient_HTLRAPI_deal:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrapi/hotels/deal/listing
+  useOverrideUrl: 'true'
+HttpClient_HTLRCMS_roomInfoWithoutImagesProto:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrcms/get-roominfo-withoutimages-proto/
+  useOverrideUrl: 'true'
+HttpClient_HTLRCMS_roominfoLiteProto:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htlrcms/get-roominfo-lite-proto/
+  useOverrideUrl: 'true'
+HttpClient_HTLROOMMERGE_merge:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-room-merge/merge
+  useOverrideUrl: 'true'
+HttpClient_HTLROOMMERGE_nodaterooms:
+  overrideUrl: ${lookup(HTL_SERVICE_KEY)}/htl-room-merge/nodaterooms
+  useOverrideUrl: 'true'
+HttpClient_HTLSORT_sortHotels:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/hsortapi/hotels/v0/sortHotels
+  useOverrideUrl: 'true'
+HttpClient_HtlSolrCloudServices_hotelSearch:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/
+  useOverrideUrl: 'true'
+HttpClient_HtlSolrCloudServices_metroRegionSearch:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/rtlsearch/
+  useOverrideUrl: 'true'
+HttpClient_MLAPI_prediction:
+  overrideUrl: ${lookup(RECSVCS_SERVICE_KEY)}/ml-api/prediction
+  useOverrideUrl: 'true'
+HttpClient_SETISVCS_ACE:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/seti-svcs/ace
+  useOverrideUrl: 'true'
+HttpClient_SolrCloudServices_metroRegionSearch:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/rtlsearch/
+  useOverrideUrl: 'true'
+HttpClient_SolrServices_hotelSearch:
+  overrideUrl: ${lookup(DATASVCS_SERVICE_KEY)}/htlsolrsearch/hotels/
+  useOverrideUrl: 'true'
+BAM_QMGRP:
+  Algorithm: RRPP
+  DiscardNewMessages: 'true'
+  DiskCapacityInMB: '100'
+  Mode: DISPATCH_MODE_JMS
+  ProcessFrequencyInSeconds: '10'
+  QueueCapacity: '3000'
+  QueueName: LOG_EVENT
+  RefreshTimeInSecs: '180'
+  RefreshType: EVENT_TIMER_REFRESH
+  ShouldCancelFuture: 'true'
+  TriggerQueueSize: '2'
+  persistMessages: 'false'
+BAM_QMGRP_ROUTER:
+  DEFAULT_DISPATCHERS: BAM_QMGRP_KAFKA
+  DISPATCHERS_HOTEL_PRICE_DIFF_LIST_DTL: BAM_QMGRP_KAFKA,KafkaDefaultAMD.hrapi_data
+DynamicPricingConfig:
+  enabled: 'false'
+  excludedAppCodes: IPHONENEG,IPADNEG,ANDROIDNEG,ANDROIDTABLET
+  executorThreadCount: '2'
+  gRPCHost: ${lookup(DYNAMIC_PRICING_GRPC_HOST_URL)}
+  gRPCPort: ${lookup(DYNAMIC_PRICING_GRPC_HOST_PORT)}
+Y_REDIS_14452:
+  BlockWhenExhausted: 'true'
+  ClientName: HRAPI
+  ConnectTimeoutInMillis: '5000'
+  ConvertPipelineAndTxResults: 'false'
+  HostName: 10.20.1.180
+  MaxIdleConnections: '10'
+  MaxTotalConnections: '100'
+  MaxWaitTimeMills: '5000'
+  MinEvictableIdleTimeMillis: '60000'
+  MinIdleConnections: '5'
+  NumTestsPerEvictionRun: '-1'
+  Password: ${secret(gsm://${lookup(pcln.environ)}_hrapi_gnae1_booking_history_redis_password)}
+  Port: '6379'
+  ReadTimeOutInMillis: '5000'
+  TestWhileIdle: 'true'
+  TimeBetweenEvictionRuns: '30000'
+QA_REDIS_14455:
+  BlockWhenExhausted: 'true'
+  ClientName: HRAPI
+  ConnectTimeoutInMillis: '5000'
+  ConvertPipelineAndTxResults: 'false'
+  HostName: 10.11.7.59
+  MaxIdleConnections: '10'
+  MaxTotalConnections: '100'
+  MaxWaitTimeMills: '5000'
+  MinEvictableIdleTimeMillis: '60000'
+  MinIdleConnections: '5'
+  NumTestsPerEvictionRun: '-1'
+  Password: ${secret(gsm://${lookup(pcln.environ)}_hrapi_booking_history_redis_password)}
+  Port: '6379'
+  ReadTimeOutInMillis: '5000'
+  TestWhileIdle: 'true'
+  TimeBetweenEvictionRuns: '30000'
+  TimeOut: '1000'
+  UseConnectionPooling: 'true'
+  useSSL: 'false'
+aiven:
+  bootstrap.servers: ${lookup(AIVEN_BOOTSTRAP_SERVER)}
+  bootstrap.servers.hv: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+  password: ${secret(gsm://${lookup(pcln.environ)}_hrapi_aiven_credentials_password)}
+  schema.registry.url: ${lookup(AIVEN_BOOTSTRAP_SCHEMA_SERVER)}
+  schema.registry.url.hv: ${lookup(AIVEN_BOOTSTRAP_SCHEMA_SERVER_HV)}
+  username: ${secret(gsm://${lookup(pcln.environ)}_hrapi_aiven_credentials_username)}
+KafkaAsyncClientHighVolume:
+  batch.num.messages: 200
+  compression.codec: gzip
+  metadata.broker.list: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+  producer.type: async
+  queue.buffering.max.messages: 400
+  queue.buffering.max.ms: 1000
+  queue.enqueue.timeout.ms: -1
+  serializer.class: kafka.serializer.DefaultEncoder
+  ssl.endpoint.identification.algorithm: ''
+  ssl.truststore.location: /apps/home/eng/ssl/pcln_cacerts
+KafkaAsyncClientHighVolume_HV:
+  batch.num.messages: 200
+  compression.codec: gzip
+  metadata.broker.list: ${lookup(AIVEN_BOOTSTRAP_SERVER_HV)}
+  producer.type: async
+  queue.buffering.max.messages: 400
+  queue.buffering.max.ms: 1000
+  queue.enqueue.timeout.ms: -1
+  serializer.class: kafka.serializer.DefaultEncoder
+  ssl.endpoint.identification.algorithm: ''
+  ssl.truststore.location: /apps/home/eng/ssl/pcln_cacerts
+KafkaCluster_HV:
+  ssl.endpoint.identification.algorithm: ''
+  ssl.truststore.location: /apps/home/eng/ssl/pcln_cacerts
+KafkaProducer_Default:
+  ssl.endpoint.identification.algorithm: ''
+  ssl.truststore.location: /apps/home/eng/ssl/pcln_cacerts
+NY_REDIS_14452:
+  BlockWhenExhausted: 'true'
+  ClientName: HRAPI
+  ConnectTimeoutInMillis: '5000'
+  ConvertPipelineAndTxResults: 'false'
+  HostName: 10.20.1.180
+  MaxIdleConnections: '10'
+  MaxTotalConnections: '100'
+  MaxWaitTimeMills: '5000'
+  MinEvictableIdleTimeMillis: '60000'
+  MinIdleConnections: '5'
+  NumTestsPerEvictionRun: '-1'
+  Password: ${secret(gsm://${lookup(pcln.environ)}_hrapi_gnae1_booking_history_redis_password)}
+  Port: '6379'
+  ReadTimeOutInMillis: '5000'
+  TestWhileIdle: 'true'
+  TimeBetweenEvictionRuns: '30000'
+KafkaCluster_default:
+  max.request.size: 10000000
+
